@@ -1,0 +1,7 @@
+on fs
+    mkdir /local_cfg
+    start config_init
+
+service config_init /system/bin/sh /config_init.sh
+    disabled
+    oneshot

@@ -1,0 +1,47 @@
+on post-fs-data
+
+    mkdir /data/gps 0770 gps system
+
+on post-fs
+
+    # nStandby GPIO
+    chmod 0660 /sys/devices/platform/intel_mid_gps/intel_mid_gps/enable
+    chown gps gps /sys/devices/platform/intel_mid_gps/intel_mid_gps/enable
+
+on property:ro.spid.gps.tty=ttyMFD2
+    chmod 0660 /dev/ttyMFD2
+    chown gps gps /dev/ttyMFD2
+    chmod 0660 /sys/class/tty/ttyMFD2/../../power/control
+    chown system system /sys/class/tty/ttyMFD2/../../power/control
+    mkdir /dev/gps 0770 gps system
+    symlink /dev/ttyMFD2 /dev/gps/ttyGPS
+    symlink /sys/class/tty/ttyMFD2/../../power/control /dev/gps/ttyGPSPowerControl
+
+on property:ro.spid.gps.tty=ttyMFD3
+    chmod 0660 /dev/ttyMFD3
+    chown gps gps /dev/ttyMFD3
+    chmod 0660 /sys/class/tty/ttyMFD3/../../power/control
+    chown system system /sys/class/tty/ttyMFD3/../../power/control
+    mkdir /dev/gps 0770 gps system
+    symlink /dev/ttyMFD3 /dev/gps/ttyGPS
+    symlink /sys/class/tty/ttyMFD3/../../power/control /dev/gps/ttyGPSPowerControl
+
+on property:ro.spid.gps.tty=ttyS2
+    chmod 0660 /dev/ttyS2
+    chown gps gps /dev/ttyS2
+    chmod 0660 /sys/class/tty/ttyS2/../../power/control
+    chown system system /sys/class/tty/ttyS2/../../power/control
+    mkdir /dev/gps 0770 gps system
+    symlink /dev/ttyS2 /dev/gps/ttyGPS
+    symlink /sys/class/tty/ttyS2/../../power/control /dev/gps/ttyGPSPowerControl
+
+service gpscerd /system/bin/gpscerd /data/gps/gps.cer
+    class main
+    user system
+    group system
+    oneshot
+
+service gpsd /system/bin/gpsd -c /system/etc/gps.xml
+    class main
+    user gps
+    group system inet radio sdcard_rw net_admin

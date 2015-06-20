@@ -1,0 +1,41 @@
+# Enable by default android java wakelock logging
+on init
+#    mkdir /logs
+    symlink /data/logs /logs
+    write /proc/sys/kernel/kptr_restrict 2
+
+on early-boot
+    chown system log /logs
+    chmod 0770 /logs
+
+on post-fs-data
+    mkdir /data/tombstones 0755 system system
+    mkdir /data/system/    0755 system system
+    mkdir /data/system/dropbox 0700 system system
+    mkdir /logs/modemcrash 0775 system system
+    mkdir /logs/aplogs 0775 system log
+
+on charger
+    # basic networking for "adb root"
+    ifup lo
+    hostname localhost
+    domainname localdomain
+    mount ext4 /dev/block/mmcblk0p7 /logs nosuid nodev barrier=1,data=ordered
+    mkdir /logs/modemcrash 0775 system system
+    mkdir /logs/aplogs 0775 system log
+
+on ramconsole
+    powerctl reboot
+
+# crash and log services
+#service crashlogd /system/bin/crashmonitor
+#    class late_start
+#    user system
+#    group system log radio
+
+# LogConfig service
+service logconfig /system/bin/logconfig
+    class main
+    socket logconfig stream 0660 root system
+    disabled
+    oneshot

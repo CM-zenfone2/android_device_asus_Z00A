@@ -1,0 +1,21 @@
+on post-fs-data
+
+    mkdir /data/nfc 0770 nfc nfc
+
+
+on boot
+
+# NFCC hardware used on the board
+    setprop ro.nfc.nfcc "bcm_2079x"
+
+# Permissions for NFC
+    chmod 0660 /dev/bcm2079x-i2c
+    chown nfc nfc /dev/bcm2079x-i2c
+
+# CSM disable
+    setprop ro.nfc.use_csm false
+
+# SE support
+    setprop ro.nfc.se.uicc false
+    setprop ro.nfc.se.ese false
+

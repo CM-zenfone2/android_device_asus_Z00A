@@ -38,11 +38,11 @@ DEVICE_PACKAGE_OVERLAYS := \
     device/asus/fhd/overlay
 
 PRODUCT_COPY_FILES += \
-    device/asus/fhd/fstab.fhd:root/fstab.fhd \
-    device/asus/fhd/init.fhd.rc:root/init.fhd.rc \
-    device/asus/fhd/init.fhd.usb.rc:root/init.fhd.usb.rc \
-    device/asus/fhd/ueventd.fhd.rc:root/ueventd.fhd.rc \
-    device/asus/fhd/init.recovery.fhd.rc:root/init.recovery.fhd.rc
+    device/asus/moorefield/fhd/fstab.fhd:root/fstab.fhd \
+    device/asus/moorefield/fhd/init.fhd.rc:root/init.fhd.rc \
+    device/asus/moorefield/fhd/init.fhd.usb.rc:root/init.fhd.usb.rc \
+    device/asus/moorefield/fhd/ueventd.fhd.rc:root/ueventd.fhd.rc \
+    device/asus/moorefield/fhd/init.recovery.fhd.rc:root/init.recovery.fhd.rc
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -67,7 +67,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # specific management of audio_policy.conf
 PRODUCT_COPY_FILES += \
-    device/asus/fhd/audio_policy.conf:system/etc/audio_policy.conf
+    device/asus/moorefield/fhd/configs/audio_policy.conf:system/etc/audio_policy.conf
 
 # Hdmi CEC: Fugu works as a playback device (4).
 PRODUCT_PROPERTY_OVERRIDES += ro.hdmi.device_type=4
@@ -112,9 +112,9 @@ PRODUCT_PACKAGES += \
     bt_bcm4354
 
 PRODUCT_COPY_FILES += \
-    device/asus/fhd/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
-    device/asus/fhd/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-    device/asus/fhd/wifi/bcmdhd_sr2.cal:system/etc/wifi/bcmdhd_sr2.cal
+    device/asus/moorefield/fhd/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
+    device/asus/moorefield/fhd/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
+    device/asus/moorefield/fhd/wifi/bcmdhd_sr2.cal:system/etc/wifi/bcmdhd_sr2.cal
 
 # IMG graphics
 PRODUCT_PACKAGES += \
@@ -123,15 +123,15 @@ PRODUCT_PACKAGES += \
 
 #Video
 PRODUCT_COPY_FILES += \
-    device/asus/fhd/media_profiles.xml:system/etc/media_profiles.xml \
-    device/asus/fhd/wrs_omxil_components.list:system/etc/wrs_omxil_components.list \
+    device/asus/moorefield/fhd/media/media_profiles.xml:system/etc/media_profiles.xml \
+    device/asus/moorefield/fhd/media/wrs_omxil_components.list:system/etc/wrs_omxil_components.list \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml \
-    device/asus/fhd/media_codecs.xml:system/etc/media_codecs.xml \
-    device/asus/fhd/vp9_interpredict.binary:system/etc/vp9_interpredict.binary \
-    device/asus/fhd/mfx_omxil_core.conf:system/etc/mfx_omxil_core.conf \
-    device/asus/fhd/video_isv_profile.xml:system/etc/video_isv_profile.xml
+    device/asus/moorefield/fhd/media/media_codecs.xml:system/etc/media_codecs.xml \
+    device/asus/moorefield/fhd/media/vp9_interpredict.binary:system/etc/vp9_interpredict.binary \
+    device/asus/moorefield/fhd/media/mfx_omxil_core.conf:system/etc/mfx_omxil_core.conf \
+    device/asus/moorefield/fhd/media/video_isv_profile.xml:system/etc/video_isv_profile.xml
 
 
 # psb video
@@ -227,7 +227,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += librecovery_ui_fhd
 
 PRODUCT_COPY_FILES += \
-    device/asus/fhd/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
+    device/asus/moorefield/fhd/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
@@ -244,15 +244,15 @@ PRODUCT_COPY_FILES += \
 
 # Key layout files
 PRODUCT_COPY_FILES += \
-    device/asus/fhd/keylayout/ASUS_TransKeyboard.kl:system/usr/keylayout/ASUS_TransKeyboard.kl \
-    device/asus/fhd/keylayout/ftxxxx_ts.kl:system/usr/keylayout/ftxxxx_ts.kl\
-    device/asus/fhd/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    device/asus/fhd/keylayout/lm49453-audio_Intel_MID_Audio_Jack.kl:system/usr/keylayout/lm49453-audio_Intel_MID_Audio_Jack.kl \
-    device/asus/fhd/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl
+    device/asus/moorefield/fhd/keylayout/ASUS_TransKeyboard.kl:system/usr/keylayout/ASUS_TransKeyboard.kl \
+    device/asus/moorefield/fhd/keylayout/ftxxxx_ts.kl:system/usr/keylayout/ftxxxx_ts.kl\
+    device/asus/moorefield/fhd/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/asus/moorefield/fhd/keylayout/lm49453-audio_Intel_MID_Audio_Jack.kl:system/usr/keylayout/lm49453-audio_Intel_MID_Audio_Jack.kl \
+    device/asus/moorefield/fhd/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl
 
 #GFX Config
 PRODUCT_COPY_FILES += \
-    device/asus/fhd/powervr.ini:system/etc/powervr.ini
+    device/asus/moorefield/fhd/powervr.ini:system/etc/powervr.ini
 
 # Thermal itux
 ENABLE_ITUXD := true
@@ -266,7 +266,7 @@ PRODUCT_PACKAGES += \
 # Debug rc files
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_COPY_FILES += \
-    device/asus/fhd/init.fhd.diag.rc.userdebug:root/init.fhd.diag.rc
+    device/asus/moorefield/fhd/init.fhd.diag.rc.userdebug:root/init.fhd.diag.rc
 endif
 
 $(call inherit-product-if-exists, vendor/asus/fhd/device-vendor.mk)
@@ -278,6 +278,6 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4354
 
 # specific management of sep_policy.conf
 PRODUCT_COPY_FILES += \
-    device/asus/fhd/sep_policy.conf:system/etc/security/sep_policy.conf
+    device/asus/moorefield/fhd/sep_policy.conf:system/etc/security/sep_policy.conf
 
 #PRODUCT_CHARACTERISTICS := tablet

@@ -1,0 +1,32 @@
+# Android default init.rc (system/core/rootdir/init.rc) should be untouched.
+# *EXCEPTIONALLY*, definitions from Android default init.rc may be modified.
+#
+# Use this file for overrides prior to default init.rc definitions.
+# Please keep this file to the bare minimum as default init.rc should be
+# preferred to duplicates here.
+
+### Import ###
+# import Android default init.rc renamed init.aosp.rc
+# init.aosp.rc actually gets parsed after all the content of this file.
+import /init.aosp.rc
+
+
+### Services ###
+# Android init only keeps the first definition found for a service.
+# Override a service from Android default init.rc by adding it here.
+
+service media /system/bin/mediaserver
+    class main
+    user media
+    group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm radio system
+    ioprio rt 4
+
+service keystore /system/bin/keystore /data/misc/keystore
+    class main
+    user keystore
+    group keystore drmrpc system
+
+service flash_recovery /system/bin/install-recovery.sh
+    class main
+    seclabel u:r:install_recovery:s0
+    oneshot

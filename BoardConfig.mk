@@ -26,10 +26,10 @@ TARGET_CPU_ABI_LIST_32_BIT := x86,armeabi-v7a,armeabi
 TARGET_CPU_SMP := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := x86_64-linux-android-
 
-TARGET_RECOVERY_FSTAB := device/asus/fugu/recovery.fstab
-TARGET_RELEASETOOLS_EXTENSIONS := device/asus/fugu
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_fugu
-TARGET_RECOVERY_UI_LIB := librecovery_ui_fugu
+TARGET_RECOVERY_FSTAB := device/asus/moorefield/fhd/recovery.fstab
+TARGET_RELEASETOOLS_EXTENSIONS := device/asus/moorefield/fhd
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_fhd
+TARGET_RECOVERY_UI_LIB := librecovery_ui_fhd
 
 TARGET_BOARD_PLATFORM := moorefield
 TARGET_BOOTLOADER_BOARD_NAME := moorefield
@@ -52,12 +52,9 @@ BOARD_KERNEL_IMAGE_NAME := bzImage
 # Kernel cmdline
 BOARD_KERNEL_CMDLINE := pci=noearly vmalloc=256M ptrace.ptrace_can_access=1
 BOARD_KERNEL_CMDLINE += earlyprintk=nologger loglevel=8
-BOARD_KERNEL_CMDLINE += androidboot.hardware=fugu androidboot.serialno=01234567890123456789
+BOARD_KERNEL_CMDLINE += androidboot.hardware=mofd_v1 androidboot.serialno=01234567890123456789
 BOARD_KERNEL_CMDLINE += snd_pcm.maximum_substreams=8
 BOARD_KERNEL_CMDLINE += intel_soc_pmu.enable_s3=0
-
-# Custom dumpstate library to add board specific stuff to bugreport
-BOARD_HAL_STATIC_LIBRARIES := libdumpstate.fugu
 
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
@@ -88,7 +85,7 @@ WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/fugu/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/moorefield/fhd/bluetooth
 
 # IMG graphics
 BOARD_GFX_REV := RGX6400
@@ -106,7 +103,7 @@ BOARD_USES_TINY_ALSA_AUDIO := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 
-BOARD_EGL_CFG := device/asus/fugu/egl.cfg
+BOARD_EGL_CFG := device/asus/moorefield/fhd/configs/egl.cfg
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.opengles.version = 196608 \
@@ -163,7 +160,7 @@ INTEL_DPST := true
 # bootstub as 2nd bootloader
 TARGET_BOOTLOADER_IS_2ND := true
 
-BOARD_SEPOLICY_DIRS := device/asus/fugu/sepolicy
+BOARD_SEPOLICY_DIRS := device/asus/moorefield/fhd/sepolicy
 BOARD_SEPOLICY_UNION := \
     bluetooth.te \
     btfwloader.te \

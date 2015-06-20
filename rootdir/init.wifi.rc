@@ -1,0 +1,49 @@
+import init.wifi.vendor.rc
+
+on post-fs-data
+    mkdir /data/misc/wifi 0770 wifi wifi
+
+on boot
+    write /proc/sys/net/ipv4/tcp_limit_output_bytes 1500000
+
+on post-fs-data
+   mkdir /data/misc/wifi/sockets 0770 wifi wifi
+   mkdir /data/misc/dhcp 0770 dhcp wifi
+   mkdir /data/misc/firmware 0770 system system
+   chmod 0660 /system/etc/wifi/wpa_supplicant.conf
+   chown wifi wifi /system/etc/wifi/wpa_supplicant.conf
+   chmod 0660 /system/etc/wifi/p2p_supplicant.conf
+   chown wifi wifi /system/etc/wifi/p2p_supplicant.conf
+   chmod 0660 /system/etc/wifi/hostapd.conf
+   chown wifi wifi /system/etc/wifi/hostapd.conf
+
+on property:init.svc.wpa_supplicant=stopped
+    stop dhcpcd
+
+
+service ifcfg_mac80211 /system/bin/ifconfig wlan0 up
+    class main
+    disabled
+    oneshot
+
+service dhcpcd_wlan0 /system/bin/dhcpcd -ABKL
+    class main
+    group wifi system dhcp
+    disabled
+    oneshot
+
+service iprenew_wlan0 /system/bin/dhcpcd -n
+    group system dhcp
+    disabled
+    oneshot
+
+service sta_connected /system/bin/am broadcast -a com.asus.softap.action.STA_CONNECTED
+    class main
+    disabled
+    oneshot
+
+service sta_disconnected /system/bin/am broadcast -a com.asus.softap.action.STA_DISCONNECTED
+    class main
+    disabled
+    oneshot
+
