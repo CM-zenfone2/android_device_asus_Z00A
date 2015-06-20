@@ -1,0 +1,305 @@
+#From Z:\Project\CLVP_JB_WW12\frameworks\base\data\keyboards\Generic.kl
+key 1     ESCAPE            WAKE UNLOCK
+key 2     1                 WAKE UNLOCK
+key 3     2                 WAKE UNLOCK
+key 4     3                 WAKE UNLOCK
+key 5     4                 WAKE UNLOCK
+key 6     5                 WAKE UNLOCK
+key 7     6                 WAKE UNLOCK
+key 8     7                 WAKE UNLOCK
+key 9     8                 WAKE UNLOCK
+key 10    9                 WAKE UNLOCK
+key 11    0                 WAKE UNLOCK
+key 12    MINUS             WAKE UNLOCK
+key 13    EQUALS            WAKE UNLOCK
+key 14    DEL               WAKE UNLOCK
+key 15    TAB               WAKE UNLOCK
+key 16    Q                 WAKE UNLOCK
+key 17    W                 WAKE UNLOCK
+key 18    E                 WAKE UNLOCK
+key 19    R                 WAKE UNLOCK
+key 20    T                 WAKE UNLOCK
+key 21    Y                 WAKE UNLOCK
+key 22    U                 WAKE UNLOCK
+key 23    I                 WAKE UNLOCK
+key 24    O                 WAKE UNLOCK
+key 25    P                 WAKE UNLOCK
+key 26    LEFT_BRACKET      WAKE UNLOCK    
+key 27    RIGHT_BRACKET     WAKE UNLOCK     
+key 28    ENTER             WAKE UNLOCK
+key 29    CTRL_LEFT         WAKE UNLOCK
+key 30    A                 WAKE UNLOCK
+key 31    S                 WAKE UNLOCK
+key 32    D                 WAKE UNLOCK
+key 33    F                 WAKE UNLOCK
+key 34    G                 WAKE UNLOCK
+key 35    H                 WAKE UNLOCK
+key 36    J                 WAKE UNLOCK
+key 37    K                 WAKE UNLOCK
+key 38    L                 WAKE UNLOCK
+key 39    SEMICOLON         WAKE UNLOCK
+key 40    APOSTROPHE        WAKE UNLOCK
+key 41    GRAVE             WAKE UNLOCK
+key 42    SHIFT_LEFT        WAKE UNLOCK
+key 43    BACKSLASH         WAKE UNLOCK
+key 44    Z                 WAKE UNLOCK
+key 45    X                 WAKE UNLOCK
+key 46    C                 WAKE UNLOCK
+key 47    V                 WAKE UNLOCK
+key 48    B                 WAKE UNLOCK
+key 49    N                 WAKE UNLOCK
+key 50    M                 WAKE UNLOCK
+key 51    COMMA             WAKE UNLOCK
+key 52    PERIOD            
+key 53    SLASH             WAKE UNLOCK
+key 54    SHIFT_RIGHT       WAKE UNLOCK
+key 55    NUMPAD_MULTIPLY
+key 56    ALT_LEFT          WAKE UNLOCK
+key 57    SPACE             WAKE UNLOCK
+key 58    CAPS_LOCK         WAKE UNLOCK
+key 59    F1                WAKE UNLOCK
+key 60    F2                WAKE UNLOCK
+key 61    F3                WAKE UNLOCK
+key 62    F4                WAKE UNLOCK
+key 63    F5                WAKE UNLOCK
+key 64    F6                WAKE UNLOCK
+key 65    F7                WAKE UNLOCK
+key 66    F8                WAKE UNLOCK
+key 67    F9                WAKE UNLOCK
+key 68    F10               WAKE UNLOCK
+key 69    NUM_LOCK          WAKE UNLOCK
+key 70    SCROLL_LOCK       WAKE UNLOCK
+key 71    NUMPAD_7          WAKE UNLOCK
+key 72    NUMPAD_8          WAKE UNLOCK
+key 73    NUMPAD_9          WAKE UNLOCK
+key 74    MINUS             WAKE UNLOCK
+key 75    NUMPAD_4          WAKE UNLOCK
+key 76    NUMPAD_5          WAKE UNLOCK
+key 77    NUMPAD_6          WAKE UNLOCK
+key 78    NUMPAD_ADD        WAKE UNLOCK
+key 79    NUMPAD_1          WAKE UNLOCK
+key 80    NUMPAD_2          WAKE UNLOCK
+key 81    NUMPAD_3          WAKE UNLOCK
+key 82    NUMPAD_0          WAKE UNLOCK
+key 83    NUMPAD_DOT        WAKE UNLOCK
+
+key 85    ZENKAKU_HANKAKU
+key 86    BACKSLASH         WAKE UNLOCK
+key 87    F11               WAKE UNLOCK
+key 88    F12               WAKE UNLOCK
+key 89    RO                WAKE UNLOCK
+
+key 92    HENKAN            WAKE UNLOCK
+key 93    KATAKANA_HIRAGANA
+key 94    MUHENKAN          WAKE UNLOCK
+key 95    NUMPAD_COMMA      
+key 96    NUMPAD_ENTER      WAKE UNLOCK
+key 97    CTRL_RIGHT        WAKE UNLOCK
+key 98    NUMPAD_DIVIDE     WAKE UNLOCK
+key 99    CAPTURE
+key 100   ALT_RIGHT         WAKE UNLOCK
+
+key 102   MOVE_HOME         WAKE UNLOCK
+key 103   DPAD_UP           WAKE UNLOCK
+key 104   PAGE_UP           WAKE UNLOCK
+key 105   DPAD_LEFT         WAKE UNLOCK
+key 106   DPAD_RIGHT        WAKE UNLOCK
+key 107   MOVE_END          WAKE UNLOCK
+key 108   DPAD_DOWN         WAKE UNLOCK
+key 109   PAGE_DOWN         WAKE UNLOCK
+key 110   INSERT            WAKE UNLOCK
+key 111   FORWARD_DEL
+
+key 113   VOLUME_MUTE       WAKE UNLOCK
+key 114   VOLUME_DOWN       WAKE UNLOCK
+key 115   VOLUME_UP         WAKE UNLOCK
+key 116   POWER             WAKE UNLOCK
+key 117   NUMPAD_EQUALS     WAKE UNLOCK
+
+key 119   BREAK
+
+key 121   NUMPAD_COMMA
+key 122   KANA
+key 123   EISU
+key 124   YEN               WAKE UNLOCK
+key 125   META_LEFT         WAKE UNLOCK
+key 126   META_RIGHT        WAKE UNLOCK
+key 127   MENU              WAKE
+key 128   MEDIA_STOP        WAKE UNLOCK
+
+key 139   MENU              WAKE
+key 140   CALCULATOR        WAKE UNLOCK
+
+key 142   POWER             WAKE UNLOCK
+key 143   POWER             WAKE UNLOCK
+
+key 150   EXPLORER
+
+key 152   POWER             WAKE UNLOCK
+
+key 155   ENVELOPE
+key 156   BOOKMARK
+
+key 158   BACK              WAKE
+key 159   FORWARD           WAKE UNLOCK
+key 160   MEDIA_CLOSE
+key 161   MEDIA_EJECT
+key 162   MEDIA_EJECT
+key 163   MEDIA_NEXT
+key 164   MEDIA_PLAY_PAUSE
+key 165   MEDIA_PREVIOUS
+key 166   MEDIA_STOP
+key 167   MEDIA_RECORD
+key 168   MEDIA_REWIND
+key 169   CALL
+
+key 171   MUSIC             WAKE UNLOCK
+key 172   HOME              WAKE UNLOCK
+
+key 177   PAGE_UP           WAKE UNLOCK
+key 178   PAGE_DOWN         WAKE UNLOCK
+key 179   NUMPAD_LEFT_PAREN
+key 180   NUMPAD_RIGHT_PAREN
+
+key 200   MEDIA_PLAY        WAKE UNLOCK
+key 201   MEDIA_PAUSE       WAKE UNLOCK
+
+key 207   MEDIA_PLAY
+key 208   MEDIA_FAST_FORWARD
+
+key 212   CAMERA            WAKE UNLOCK
+key 213   MUSIC             WAKE UNLOCK
+
+key 215   ENVELOPE
+
+key 217   SEARCH            WAKE UNLOCK
+
+key 233   HEADSETHOOK
+
+key 256   BUTTON_1
+key 257   BUTTON_2
+key 258   BUTTON_3
+key 259   BUTTON_4
+key 260   BUTTON_5
+key 261   BUTTON_6
+key 262   BUTTON_7
+key 263   BUTTON_8
+key 264   BUTTON_9
+key 265   BUTTON_10
+key 266   BUTTON_11
+key 267   BUTTON_12
+key 268   BUTTON_13
+key 269   BUTTON_14
+key 270   BUTTON_15
+key 271   BUTTON_16
+
+key 288   BUTTON_1
+key 289   BUTTON_2
+key 290   BUTTON_3
+key 291   BUTTON_4
+key 292   BUTTON_5
+key 293   BUTTON_6
+key 294   BUTTON_7
+key 295   BUTTON_8
+key 296   BUTTON_9
+key 297   BUTTON_10
+key 298   BUTTON_11
+key 299   BUTTON_12
+key 300   BUTTON_13
+key 301   BUTTON_14
+key 302   BUTTON_15
+key 303   BUTTON_16
+
+
+key 304   BUTTON_A
+key 305   BUTTON_B
+key 306   BUTTON_C
+key 307   BUTTON_X
+key 308   BUTTON_Y
+key 309   BUTTON_Z
+key 310   BUTTON_L1
+key 311   BUTTON_R1
+key 312   BUTTON_L2
+key 313   BUTTON_R2
+key 314   BUTTON_SELECT
+key 315   BUTTON_START
+key 316   BUTTON_MODE
+key 317   BUTTON_THUMBL
+key 318   BUTTON_THUMBR
+
+
+
+key 353   DPAD_CENTER
+
+key 362   GUIDE
+
+key 366   DVR
+
+key 377   TV
+
+key 397   CALENDAR
+
+key 402   CHANNEL_UP        WAKE UNLOCK
+key 403   CHANNEL_DOWN      WAKE UNLOCK
+
+
+key 429   CONTACTS
+
+
+
+key 464   FUNCTION
+key 465   ESCAPE            FUNCTION
+key 466   F1                FUNCTION
+key 467   F2                FUNCTION
+key 468   F3                FUNCTION
+key 469   F4                FUNCTION
+key 470   F5                FUNCTION
+key 471   F6                FUNCTION
+key 472   F7                FUNCTION
+key 473   F8                FUNCTION
+key 474   F9                FUNCTION
+key 475   F10               FUNCTION
+key 476   F11               FUNCTION
+key 477   F12               FUNCTION
+key 478   1                 FUNCTION
+key 479   2                 FUNCTION
+key 480   D                 FUNCTION
+key 481   E                 FUNCTION
+key 482   F                 FUNCTION
+key 483   S                 FUNCTION
+key 484   B                 FUNCTION
+
+
+# Joystick and game controller axes.
+# Axes that are not mapped will be assigned generic axis numbers by the input subsystem.
+axis 0x00 X
+axis 0x01 Y
+axis 0x02 Z
+axis 0x03 RX
+axis 0x04 RY
+axis 0x05 RZ
+axis 0x06 THROTTLE
+axis 0x07 RUDDER
+axis 0x08 WHEEL
+axis 0x09 GAS
+axis 0x0a BRAKE
+axis 0x10 HAT_X
+axis 0x11 HAT_Y
+
+
+key 194     TOUCHPAD             WAKE UNLOCK
+key 193     BRIGHTNESS_AUTO      WAKE UNLOCK
+key 192     FLIGHT_MODE_SWITCH   WAKE UNLOCK
+key 191     MODE_SWITCH          WAKE UNLOCK
+key 190     SPLENDID             WAKE UNLOCK
+key 189     NO_FUNC              WAKE UNLOCK
+key 188     BASE_ATTACH          WAKE UNLOCK
+key 187     BASE_DETACH          WAKE UNLOCK
+key 186     SWITCH_ANDROID       WAKE UNLOCK
+key 185     LAUNCH_CAMERA        WAKE UNLOCK
+key 184     CAPTURE              WAKE UNLOCK
+key 238     WIRELESS             WAKE UNLOCK
+key 224     BRIGHTNESS_DOWN      WAKE UNLOCK
+key 225     BRIGHTNESS_UP        WAKE UNLOCK
+key 245     SCREENOFF            WAKE UNLOCK
+

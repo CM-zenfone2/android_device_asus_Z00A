@@ -1,0 +1,9 @@
+key 115   VOLUME_UP
+key 114   VOLUME_DOWN
+key 528   FOCUS
+key 212   CAMERA
+key 158   BACK              WAKE_DROPPED
+key 217   SEARCH
+key 139   MENU              WAKE_DROPPED
+key 102   HOME              WAKE
+key 113   VOLUME_MUTE
