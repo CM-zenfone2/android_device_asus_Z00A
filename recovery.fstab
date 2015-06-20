@@ -1,0 +1,40 @@
+#size_hint=16  
+/dev/block/by-name/boot         	/boot         	emmc  	None                                                                          	length=0  
+#size_hint=16  
+/dev/block/by-name/recovery     	/recovery     	emmc  	None                                                                          	length=0  
+#size_hint=16  
+/dev/block/by-name/fastboot     	/fastboot     	emmc  	None                                                                          	length=0  
+#size_hint=4   
+/dev/block/by-name/splashscreen 	/splashscreen 	emmc  	None                                                                          	length=0  
+#size_hint=16  
+/dev/block/by-name/boot-one-shot	/boot-one-shot	emmc  	None                                                                          	length=0  
+#size_hint=16  
+/dev/block/by-name/ramdump      	/ramdump      	emmc  	None                                                                          	length=0  
+#size_hint=2   
+/dev/block/by-name/silentlake   	/silentlake   	emmc  	None                                                                          	length=0  
+#size_hint=1   
+/dev/block/by-name/userkeystore 	/userkeystore 	emmc  	None                                                                          	length=0  
+#size_hint=1   
+/dev/block/by-name/persistent   	/persistent   	emmc  	None                                                                          	length=0  
+#size_hint=40  
+/dev/block/by-name/reserved     	/reserved     	hidden	None                                                                          	length=0  
+#size_hint=8   
+/dev/block/by-name/panic        	/panic        	raw   	None                                                                          	length=0  
+#size_hint=32  
+/dev/block/by-name/factory      	/factory      	ext4  	nosuid,nodev,noatime,barrier=1,data=ordered                                   	length=0  
+#size_hint=8   
+/dev/block/by-name/misc         	/misc         	emmc  	None                                                                          	length=0  
+#size_hint=64  
+/dev/block/by-name/config       	/config       	ext4  	nosuid,nodev,noatime,barrier=1,data=ordered                                   	length=0  
+#size_hint=256 
+/dev/block/by-name/cache        	/cache        	ext4  	nosuid,nodev,noatime,barrier=1,data=ordered                                   	length=0  
+#size_hint=300 
+/dev/block/by-name/APD          	/APD          	ext4  	nosuid,nodev,noatime,barrier=1,data=ordered,context=u:object_r:demoapp_file:s0	length=0  
+#size_hint=32  
+/dev/block/by-name/ADF          	/ADF          	ext4  	nosuid,nodev,noatime,barrier=1,data=ordered,context=u:object_r:demoapp_file:s0	length=0  
+#size_hint=2304
+/dev/block/by-name/system       	/system       	ext4  	ro,noatime                                                                    	length=0  
+#size_hint=0   
+/dev/block/by-name/data         	/data         	ext4  	nosuid,nodev,noatime,discard,barrier=1,data=ordered,noauto_da_alloc           	length=-33
+#size_hint=-1  
+/dev/block/mmcblk1p1            	/sdcard       	vfat  	defaults                                                                      	length=0  

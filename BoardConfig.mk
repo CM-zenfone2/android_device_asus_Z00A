@@ -161,7 +161,7 @@ INTEL_DPST := true
 TARGET_BOOTLOADER_IS_2ND := true
 
 BOARD_SEPOLICY_DIRS := device/asus/moorefield/fhd/sepolicy
-BOARD_SEPOLICY_UNION := \
+#BOARD_SEPOLICY_UNION := \
     bluetooth.te \
     btfwloader.te \
     dhcp.te \
