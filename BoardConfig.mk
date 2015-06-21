@@ -50,11 +50,7 @@ TARGET_KERNEL_ARCH := x86_64
 BOARD_KERNEL_IMAGE_NAME := bzImage
 
 # Kernel cmdline
-BOARD_KERNEL_CMDLINE := pci=noearly vmalloc=256M ptrace.ptrace_can_access=1
-BOARD_KERNEL_CMDLINE += earlyprintk=nologger loglevel=8
-BOARD_KERNEL_CMDLINE += androidboot.hardware=mofd_v1 androidboot.serialno=01234567890123456789
-BOARD_KERNEL_CMDLINE += snd_pcm.maximum_substreams=8
-BOARD_KERNEL_CMDLINE += intel_soc_pmu.enable_s3=0
+BOARD_KERNEL_CMDLINE := init=/init pci=noearly loglevel=0 vmalloc=256M androidboot.hardware=mofd_v1 watchdog.watchdog_thresh=60 androidboot.spid=xxxx:xxxx:xxxx:xxxx:xxxx:xxxx androidboot.serialno=01234567890123456789 snd_pcm.maximum_substreams=8 ip=50.0.0.2:50.0.0.1::255.255.255.0::usb0:on debug_locks=0 n_gsm.mux_base_conf=\"ttyACM0,0 ttyXMM0,1\" bootboost=1
 
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
