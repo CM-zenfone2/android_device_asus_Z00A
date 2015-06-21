@@ -37,12 +37,16 @@ $(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/fhd/overlay
 
+# Ramdisk
+
+PRODUCT_PACKAGES += \
+    fstab.mofd_v1 \
+    init.mofd_v1.rc \
+    init.recovery.mofd_v1.rc \
+    ueventd.mofd_v1.rc
+
 PRODUCT_COPY_FILES += \
-    device/asus/moorefield/fhd/fstab.fhd:root/fstab.fhd \
-    device/asus/moorefield/fhd/init.fhd.rc:root/init.fhd.rc \
-    device/asus/moorefield/fhd/init.fhd.usb.rc:root/init.fhd.usb.rc \
-    device/asus/moorefield/fhd/ueventd.fhd.rc:root/ueventd.fhd.rc \
-    device/asus/moorefield/fhd/init.recovery.fhd.rc:root/init.recovery.fhd.rc
+    device/asus/moorefield/fhd/init.fhd.usb.rc:root/init.fhd.usb.rc
 
 # Audio
 PRODUCT_PACKAGES += \
