@@ -232,9 +232,6 @@ PRODUCT_PACKAGES += \
     bcmdhd.cal \
     bcmdhd_sr2.cal
 
-# Recovery
-PRODUCT_PACKAGES += librecovery_ui_fhd
-
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
 

@@ -28,8 +28,6 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := x86_64-linux-android-
 
 TARGET_RECOVERY_FSTAB := device/asus/moorefield/fhd/recovery.fstab
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/moorefield/fhd
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_fhd
-TARGET_RECOVERY_UI_LIB := librecovery_ui_fhd
 
 TARGET_BOARD_PLATFORM := moorefield
 TARGET_BOOTLOADER_BOARD_NAME := moorefield
