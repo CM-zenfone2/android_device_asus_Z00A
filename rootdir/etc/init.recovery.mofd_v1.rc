@@ -1,8 +1,5 @@
 # MOFD_V0 specific rules for recovery OS
 on early-init
-    insmod /lib/modules/tngdisp.ko
-    insmod /lib/modules/texfat.ko
-
     chmod 0600 /dev/dri/controlD64
     start thermald
 
