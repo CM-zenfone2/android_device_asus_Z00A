@@ -48,6 +48,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/init.fhd.usb.rc:root/init.fhd.usb.rc
 
+# Adb support
+
+PRODUCT_PACKAGES += \
+    adbd
+
 # Audio
 PRODUCT_PACKAGES += \
     libtinyalsa \
