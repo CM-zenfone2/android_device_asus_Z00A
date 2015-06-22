@@ -41,12 +41,25 @@ DEVICE_PACKAGE_OVERLAYS := \
 
 PRODUCT_PACKAGES += \
     fstab.mofd_v1 \
+    init.avc.rc \
+    init.bt.rc \
+    init.camera.rc \
+    init.common.rc \
+    init.config_init.rc \
+    init.debug.rc \
+    init.diag.rc \
+    init.gps.rc \
+    init.logtool.rc \
+    init.modem.rc \
     init.mofd_v1.rc \
+    init.nfc.rc \
+    init.platform.usb.rc \
     init.recovery.mofd_v1.rc \
+    init.wifi.rc \
     ueventd.mofd_v1.rc
 
-PRODUCT_COPY_FILES += \
-    device/asus/moorefield/fhd/init.fhd.usb.rc:root/init.fhd.usb.rc
+#PRODUCT_COPY_FILES += \
+#    device/asus/moorefield/fhd/init.fhd.usb.rc:root/init.fhd.usb.rc
 
 # Adb support
 
@@ -270,10 +283,10 @@ PRODUCT_PACKAGES += \
     power.fhd
 
 # Debug rc files
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-PRODUCT_COPY_FILES += \
-    device/asus/moorefield/fhd/init.fhd.diag.rc.userdebug:root/init.fhd.diag.rc
-endif
+#ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+#PRODUCT_COPY_FILES += \
+#    device/asus/moorefield/fhd/init.fhd.diag.rc.userdebug:root/init.fhd.diag.rc
+#endif
 
 $(call inherit-product-if-exists, vendor/asus/fhd/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/intel/PRIVATE/fhd/device-vendor.mk)
