@@ -40,22 +40,34 @@ DEVICE_PACKAGE_OVERLAYS := \
 # Ramdisk
 
 PRODUCT_PACKAGES += \
+    config_init.sh \
+    fstab \
     fstab.mofd_v1 \
+    fstab.zram \
     init.avc.rc \
     init.bt.rc \
+    init.bt.vendor.rc \
     init.camera.rc \
+    init.class_main.sh \
     init.common.rc \
     init.config_init.rc \
     init.debug.rc \
     init.diag.rc \
+    init.firmware.rc \
     init.gps.rc \
     init.logtool.rc \
     init.modem.rc \
     init.mofd_v1.rc \
     init.nfc.rc \
     init.platform.usb.rc \
+    init.readahead.rc \
     init.recovery.mofd_v1.rc \
+    init.watchdog.rc \
     init.wifi.rc \
+    init.wifi.vendor.rc \
+    init.zram.rc \
+    intel_prop.cfg \
+    rfkill_bt.sh \
     ueventd.mofd_v1.rc
 
 #PRODUCT_COPY_FILES += \
