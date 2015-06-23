@@ -26,7 +26,7 @@ TARGET_CPU_ABI_LIST_32_BIT := x86,armeabi-v7a,armeabi
 TARGET_CPU_SMP := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := x86_64-linux-android-
 
-TARGET_RECOVERY_FSTAB := device/asus/moorefield/fhd/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/asus/moorefield/fhd/rootdir/etc/fstab.mofd_v1
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/moorefield/fhd
 
 TARGET_BOARD_PLATFORM := moorefield
