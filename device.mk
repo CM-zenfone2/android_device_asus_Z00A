@@ -294,6 +294,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.fhd
 
+# Selinux
+PRODUCT_PACKAGES += \
+    property_contexts
+
 # Debug rc files
 #ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 #PRODUCT_COPY_FILES += \
