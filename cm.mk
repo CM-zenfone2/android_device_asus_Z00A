@@ -3,6 +3,8 @@ TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 1920
 
 # Inherit some common CM stuff.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
