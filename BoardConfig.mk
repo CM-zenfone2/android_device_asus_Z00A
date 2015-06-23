@@ -26,7 +26,6 @@ TARGET_CPU_ABI_LIST_32_BIT := x86,armeabi-v7a,armeabi
 TARGET_CPU_SMP := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := x86_64-linux-android-
 
-TARGET_RECOVERY_FSTAB := device/asus/moorefield/fhd/rootdir/etc/fstab.mofd_v1
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/moorefield/fhd
 
 TARGET_BOARD_PLATFORM := moorefield
@@ -36,7 +35,11 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1073741824
 BOARD_FLASH_BLOCK_SIZE := 2048
 
 TARGET_DROIDBOOT_LIBS := libintel_droidboot
+
+# Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+TARGET_RECOVERY_FSTAB := device/asus/moorefield/fhd/rootdir/etc/fstab.mofd_v1
 
 # Use dlmalloc
 MALLOC_IMPL := dlmalloc
