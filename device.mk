@@ -70,14 +70,6 @@ PRODUCT_PACKAGES += \
     rfkill_bt.sh \
     ueventd.mofd_v1.rc
 
-#PRODUCT_COPY_FILES += \
-#    device/asus/moorefield/fhd/init.fhd.usb.rc:root/init.fhd.usb.rc
-
-# Adb support
-
-PRODUCT_PACKAGES += \
-    adbd
-
 # Audio
 PRODUCT_PACKAGES += \
     libtinyalsa \
@@ -137,10 +129,6 @@ PRODUCT_PACKAGES += \
     TvSettings \
     tv_input.default
 
-# Include AppDrawer
-PRODUCT_PACKAGES += \
-    AppDrawer
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     bt_bcm4354
@@ -197,6 +185,7 @@ PRODUCT_PACKAGES += \
     vsp.bin.0008.0000.0002 \
     vsp.bin.0008.0002.0001 \
     vsp.bin.000c.0001.0001
+
 # libva
 PRODUCT_PACKAGES += \
     libva \
@@ -294,16 +283,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.fhd
 
-# Selinux
-PRODUCT_PACKAGES += \
-    property_contexts
-
-# Debug rc files
-#ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-#PRODUCT_COPY_FILES += \
-#    device/asus/moorefield/fhd/init.fhd.diag.rc.userdebug:root/init.fhd.diag.rc
-#endif
-
 $(call inherit-product-if-exists, vendor/asus/fhd/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/intel/PRIVATE/fhd/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/intel/moorefield/prebuilts/houdini/houdini.mk)
@@ -315,4 +294,3 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4354
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/sep_policy.conf:system/etc/security/sep_policy.conf
 
-#PRODUCT_CHARACTERISTICS := tablet
