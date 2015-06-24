@@ -24,7 +24,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # xhdpi, while we are hardcoding the 1080 resolution.
 # when we start doing 720 as well, will need to stop hardcoding this.
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320
+    ro.sf.lcd_density=480
 
 # call dalvik heap config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
