@@ -26,18 +26,18 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=480
 
+# There may be a cleaner way to do this.
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapgrowthlimit=200m \
+    dalvik.vm.heapsize=348m \
+    dalvik.vm.heapminfree=512k
+
 # call dalvik heap config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 
 # call hwui memory config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
-# There may be a cleaner way to do this.
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=200m \
-    dalvik.vm.heapsize=348m \
-    dalvik.vm.heapminfree=512k
-    
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/fhd/overlay
 
