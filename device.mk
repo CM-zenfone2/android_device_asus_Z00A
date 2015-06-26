@@ -39,7 +39,7 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/asus/fhd/overlay
+    device/asus/moorefield/fhd/overlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
