@@ -1,0 +1,10 @@
+# EGL
+vendor/lib/libIMGegl.so
+vendor/lib/libsrv_um.so
+vendor/lib/libusc.so
+vendor/lib/libglslcompiler.so
+vendor/lib/libpvrANDROID_WSEGL.so
+vendor/lib/hw/gralloc.moorefield.so
+
+# Sensors
+lib/hw/sensors.mofd_v1.so
