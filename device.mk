@@ -81,8 +81,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default
 
-USE_CUSTOM_AUDIO_POLICY := 1
-
 # Camera
 PRODUCT_PACKAGES += \
     camera.fhd \
