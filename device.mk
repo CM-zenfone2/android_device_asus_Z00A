@@ -130,8 +130,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
-    device/asus/moorefield/fhd/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-    device/asus/moorefield/fhd/wifi/bcmdhd_sr2.cal:system/etc/wifi/bcmdhd_sr2.cal
+    device/asus/moorefield/fhd/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal 
 
 # IMG graphics
 PRODUCT_PACKAGES += \
@@ -238,8 +237,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     dhcpcd.conf \
     wpa_supplicant \
-    bcmdhd.cal \
-    bcmdhd_sr2.cal
+    bcmdhd.cal
 
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
