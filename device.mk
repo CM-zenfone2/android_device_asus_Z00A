@@ -239,7 +239,7 @@ PRODUCT_PACKAGES += \
     bcmdhd.cal
 
 PRODUCT_COPY_FILES += \
-    device/asus/moorefield/fhd/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
+    device/asus/moorefield/fhd/wifi/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
