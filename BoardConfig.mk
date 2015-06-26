@@ -183,7 +183,7 @@ BOARD_SEPOLICY_UNION := \
 INTEL_USE_CAMERA_UVC := true
 
 # Use the non-open-source parts, if they're present
--include vendor/asus/fhd/BoardConfigVendor.mk
+-include vendor/asus/moorefield/fhd/BoardConfigVendor.mk
 
 # Recipes to generate prebuilts
 -include device/intel/common/external/external.mk
