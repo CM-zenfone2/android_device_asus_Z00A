@@ -145,7 +145,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml \
     device/asus/moorefield/fhd/media/media_codecs.xml:system/etc/media_codecs.xml \
-    device/asus/moorefield/fhd/media/vp9_interpredict.binary:system/etc/vp9_interpredict.binary \
     device/asus/moorefield/fhd/media/mfx_omxil_core.conf:system/etc/mfx_omxil_core.conf \
     device/asus/moorefield/fhd/media/video_isv_profile.xml:system/etc/video_isv_profile.xml
 
