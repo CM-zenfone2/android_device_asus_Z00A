@@ -104,6 +104,7 @@ lib/arm/libz.so
 lib/arm/linker
 
 # EGL
+lib/libdm_dpst.so
 vendor/bin/pvrdebug
 vendor/bin/pvrhwperf
 vendor/bin/pvrlogdump
