@@ -13,6 +13,7 @@ vendor/lib/libpvr2d.dbg
 vendor/lib/libpvr2d.so
 vendor/lib/libPVROCL.so
 vendor/lib/libPVRScopeServices.so
+vendor/lib/libsrv_init.so
 vendor/lib/egl/libEGL_POWERVR_ROGUE.so
 vendor/lib/egl/libGLESv1_CM_POWERVR_ROGUE.so
 vendor/lib/egl/libGLESv2_POWERVR_ROGUE.so
