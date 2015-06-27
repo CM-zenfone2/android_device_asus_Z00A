@@ -1,27 +1,3 @@
-# EGL
-vendor/bin/pvrdebug
-vendor/bin/pvrhwperf
-vendor/bin/pvrlogdump
-vendor/bin/pvrsrvctl
-vendor/bin/pvrtld
-vendor/lib/libIMGegl.so
-vendor/lib/libsrv_um.so
-vendor/lib/libusc.so
-vendor/lib/libglslcompiler.so
-vendor/lib/libpvrANDROID_WSEGL.so
-vendor/lib/libpvr2d.dbg
-vendor/lib/libpvr2d.so
-vendor/lib/libPVROCL.so
-vendor/lib/libPVRScopeServices.so
-vendor/lib/libsrv_init.so
-vendor/lib/egl/libEGL_POWERVR_ROGUE.so
-vendor/lib/egl/libGLESv1_CM_POWERVR_ROGUE.so
-vendor/lib/egl/libGLESv2_POWERVR_ROGUE.so
-vendor/lib/hw/gralloc.moorefield.so
-
-# Sensors
-lib/hw/sensors.mofd_v1.so
-
 # Arm blobs
 lib/arm/cpuinfo
 lib/arm/libandroidfw.so
@@ -126,3 +102,27 @@ lib/arm/libwebrtc_audio_coding.so
 lib/arm/libwilhelm.so
 lib/arm/libz.so
 lib/arm/linker
+
+# EGL
+vendor/bin/pvrdebug
+vendor/bin/pvrhwperf
+vendor/bin/pvrlogdump
+vendor/bin/pvrsrvctl
+vendor/bin/pvrtld
+vendor/lib/libIMGegl.so
+vendor/lib/libsrv_um.so
+vendor/lib/libusc.so
+vendor/lib/libglslcompiler.so
+vendor/lib/libpvrANDROID_WSEGL.so
+vendor/lib/libpvr2d.dbg
+vendor/lib/libpvr2d.so
+vendor/lib/libPVROCL.so
+vendor/lib/libPVRScopeServices.so
+vendor/lib/libsrv_init.so
+vendor/lib/egl/libEGL_POWERVR_ROGUE.so
+vendor/lib/egl/libGLESv1_CM_POWERVR_ROGUE.so
+vendor/lib/egl/libGLESv2_POWERVR_ROGUE.so
+vendor/lib/hw/gralloc.moorefield.so
+
+# Sensors
+lib/hw/sensors.mofd_v1.so
