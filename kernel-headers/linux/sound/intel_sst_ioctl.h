@@ -48,4 +48,3 @@ struct snd_sst_tuning_params {
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #define SNDRV_SST_TUNING_PARAMS _IOW('L', 0x32, struct snd_sst_tuning_params)
 #endif
-

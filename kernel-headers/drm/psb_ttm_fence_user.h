@@ -69,4 +69,3 @@ struct ttm_fence_unref_arg {
 #define TTM_FENCE_FINISH 0x02
 #define TTM_FENCE_UNREF 0x03
 #endif
-
