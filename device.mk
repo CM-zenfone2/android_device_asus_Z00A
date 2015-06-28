@@ -21,16 +21,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal large xlarge hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# xhdpi, while we are hardcoding the 1080 resolution.
-# when we start doing 720 as well, will need to stop hardcoding this.
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=480
-
-# There may be a cleaner way to do this.
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=200m \
-    dalvik.vm.heapsize=348m \
-    dalvik.vm.heapminfree=512k
 
 # call dalvik heap config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
@@ -86,12 +78,6 @@ PRODUCT_PACKAGES += \
     camera.fhd \
     libs3cjpeg
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.camera.number=1 \
-    ro.camera.0.devname=/dev/video0 \
-    ro.camera.0.facing=back \
-    ro.camera.0.orientation=0
-
 # specific management of audio_policy.conf
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/configs/audio_policy.conf:system/etc/audio_policy.conf
@@ -131,6 +117,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
     device/asus/moorefield/fhd/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal 
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    bt.hfp.WideBandSpeechEnabled=true
 
 # IMG graphics
 PRODUCT_PACKAGES += \
@@ -286,3 +275,6 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4354
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/sep_policy.conf:system/etc/security/sep_policy.conf
 
+# hardware optimizations
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.isa.x86.features=sse4_2,aes_in,popcnt,movbe
