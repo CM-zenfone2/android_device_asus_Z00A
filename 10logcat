@@ -1,0 +1,9 @@
+#!/system/bin/sh
+
+(
+    logcat > /data/data/logcat.txt
+) & 
+
+killall logwrapper
+
+exit 0 

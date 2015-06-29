@@ -278,3 +278,8 @@ PRODUCT_COPY_FILES += \
 # hardware optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.isa.x86.features=sse4_2,aes_in,popcnt,movbe
+
+# Hack my logs
+PRODUCT_COPY_FILES += \
+    device/asus/moorefield/fhd/10logcat:system/etc/init.d/10logcat \
+    device/asus/moorefield/fhd/20kmsg:system/etc/init.d/20kmsg
