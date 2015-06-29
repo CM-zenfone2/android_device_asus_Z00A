@@ -112,7 +112,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifeq (\$(TARGET_DEVICE),victara)
+ifeq (\$(TARGET_DEVICE),fhd)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := com.qualcomm.location
