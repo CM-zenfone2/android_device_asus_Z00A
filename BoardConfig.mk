@@ -51,6 +51,9 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 TARGET_RECOVERY_FSTAB := device/asus/moorefield/fhd/rootdir/etc/fstab.mofd_v1
 
+# Bootloader
+TARGET_OTA_ASSERT_DEVICE := Z00A,Z008
+
 # Use dlmalloc
 MALLOC_IMPL := dlmalloc
 
