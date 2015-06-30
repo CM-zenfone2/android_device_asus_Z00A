@@ -1,10 +1,10 @@
-key 158     BACK                  WAKE    VIRTUAL
-key 102     HOME                  WAKE    VIRTUAL
-key 249     APP_SWITCH            WAKE    VIRTUAL
-key 116     GESTURE_DOUBLE_CLICK  WAKE    VIRTUAL
-key 46      GESTURE_C             WAKE    VIRTUAL
-key 18      GESTURE_E             WAKE    VIRTUAL
-key 31      GESTURE_S             WAKE    VIRTUAL
-key 47      GESTURE_V             WAKE    VIRTUAL
-key 17      GESTURE_W             WAKE    VIRTUAL
-key 44      GESTURE_Z             WAKE    VIRTUAL
+key 158     BACK                  VIRTUAL
+key 102     HOME                  VIRTUAL
+key 249     APP_SWITCH            VIRTUAL
+#key 116     GESTURE_DOUBLE_CLICK  VIRTUAL
+#key 46      GESTURE_C             VIRTUAL
+#key 18      GESTURE_E             VIRTUAL
+#key 31      GESTURE_S             VIRTUAL
+#key 47      GESTURE_V             VIRTUAL
+#key 17      GESTURE_W             VIRTUAL
+#key 44      GESTURE_Z             VIRTUAL
