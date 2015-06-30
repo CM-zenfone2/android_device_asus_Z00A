@@ -110,10 +110,6 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.isUsbOtgEnabled=1
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mtp
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    bt_bcm4354
-
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf \
     device/asus/moorefield/fhd/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal 
@@ -284,7 +280,7 @@ $(call inherit-product-if-exists, vendor/intel/PRIVATE/fhd/device-vendor.mk)
 $(call inherit-product-if-exists, vendor/intel/moorefield/prebuilts/houdini/houdini.mk)
 
 # Add WiFi Firmware
-$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4354/device-bcm.mk)
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/device-bcm.mk)
 
 # specific management of sep_policy.conf
 PRODUCT_COPY_FILES += \
