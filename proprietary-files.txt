@@ -104,7 +104,9 @@ lib/arm/libz.so
 lib/arm/linker
 
 # EGL
+bin/dpstmgr
 lib/libdm_dpst.so
+vendor/bin/hwperfbin2jsont
 vendor/bin/pvrdebug
 vendor/bin/pvrhwperf
 vendor/bin/pvrlogdump
@@ -124,6 +126,19 @@ vendor/lib/egl/libEGL_POWERVR_ROGUE.so
 vendor/lib/egl/libGLESv1_CM_POWERVR_ROGUE.so
 vendor/lib/egl/libGLESv2_POWERVR_ROGUE.so
 vendor/lib/hw/gralloc.moorefield.so
+
+bin/bd_prov
+bin/fg_conf
+bin/sl_si_service
+bin/customize_service
+bin/nvm_server
+bin/sensorhubd
+bin/gpsd
+bin/mmgr
+bin/logcontrol
+
+
+
 
 # Firmware
 # *** THIS iS A DUMP OF ALL FILES IN /system/etc/firmware
