@@ -137,8 +137,7 @@ bin/gpsd
 bin/mmgr
 bin/logcontrol
 
-
-
+lib/libhoudini.so
 
 # Firmware
 # *** THIS iS A DUMP OF ALL FILES IN /system/etc/firmware
