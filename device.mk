@@ -287,8 +287,8 @@ PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/sep_policy.conf:system/etc/security/sep_policy.conf
 
 # hardware optimizations
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.isa.x86.features=sse4_2,aes_in,popcnt,movbe
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    dalvik.vm.isa.x86.features=sse4_2,aes_in,popcnt,movbe
 
 # Hack my logs
 PRODUCT_COPY_FILES += \
