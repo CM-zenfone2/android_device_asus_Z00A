@@ -14,10 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.app_widgets.xml:system/etc/permissions/android.software.app_widgets.xml
-
-
 PRODUCT_AAPT_CONFIG := normal large xlarge hdpi xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
@@ -82,15 +78,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/configs/audio_policy.conf:system/etc/audio_policy.conf
 
-# Hdmi CEC: Fugu works as a playback device (4).
-PRODUCT_PROPERTY_OVERRIDES += ro.hdmi.device_type=4
-
 # Add props used in stock
 PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.dalvik.vm.isa.arm=x86 \
     ro.enable.native.bridge.exec=1 \
-    ro.vold.wipe_on_crypt_fail=1 \
-    ro.nrdp.modelgroup=NEXUSPLAYERFUGU \
     drm.service.enabled=true \
     ro.com.widevine.cachesize=16777216 \
     media.stagefright.cache-params=10240/20480/15 \
@@ -99,10 +90,6 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
 
 # Set the prop to enable arm native bridge
 ADDITIONAL_DEFAULT_PROPERTIES += ro.dalvik.vm.native.bridge=libhoudini.so
-
-# Enable frame-exact AV sync
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.media.avsync=true
 
 # set USB OTG enabled to add support for USB storage type
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.isUsbOtgEnabled=1
