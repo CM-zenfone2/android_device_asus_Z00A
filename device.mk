@@ -253,6 +253,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/powervr.ini:system/etc/powervr.ini
 
+# NFC
+PRODUCT_COPY_FILES += \
+    device/asus/moorefield/fhd/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/asus/moorefield/fhd/nfc/libnfc-brcm-20795a20.conf:system/etc/libnfc-brcm-20795a20.conf
+
+# NFC packages
+PRODUCT_PACKAGES += \
+    nfc_nci.bcm2079x.default \
+    NfcNci \
+    Tag
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.nfc.conf=mofd-ffd2-a \
+    ro.nfc.clk=pll
+
 # Thermal itux
 ENABLE_ITUXD := true
 PRODUCT_PACKAGES += \
