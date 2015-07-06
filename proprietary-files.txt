@@ -239,7 +239,7 @@ etc/firmware/vsp.bin.verf
 etc/firmware/vtsv_lib_1495.bin
 
 # NFC
-/vendor/firmware/bcm2079x-a2_firmware.ncd
+vendor/firmware/bcm2079x-a2_firmware.ncd
 
 # Sensors
 lib/hw/sensors.mofd_v1.so
