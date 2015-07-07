@@ -241,6 +241,9 @@ etc/firmware/vtsv_lib_1495.bin
 # Lights
 lib/hw/lights.mofd_v1.so
 
+# Power HAL
+lib/hw/power.mofd_v1.so
+
 # NFC
 vendor/firmware/bcm2079x-a2_firmware.ncd
 
