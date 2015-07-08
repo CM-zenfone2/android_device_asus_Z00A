@@ -78,6 +78,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/configs/gps.xml:system/etc/gps.xml
 
+# Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.status.polling.enable=0 \
+    rild.libpath=/system/lib/librapid-ril-core.so
+
 # specific management of audio_policy.conf
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/configs/audio_policy.conf:system/etc/audio_policy.conf
