@@ -616,4 +616,9 @@ vendor/firmware/telephony/ze550ml_WW_726x.tlv
 vendor/firmware/telephony/zx550ml_WW_726x.tlv
 
 # Sensors
+etc/sensor_hal_config_default.xml
+lib/arm/libnetd_client.so
 lib/hw/sensors.mofd_v1.so
+lib/libcontextarbitor.so
+lib/libnetd_client.so
+lib/libsensorhub.so
