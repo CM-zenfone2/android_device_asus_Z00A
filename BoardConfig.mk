@@ -197,6 +197,9 @@ BOARD_SEPOLICY_UNION := \
 # Camera
 INTEL_USE_CAMERA_UVC := true
 
+# Radio
+BOARD_RIL_SUPPORTS_MULTIPLE_CLIENTS := true
+
 # Use the non-open-source parts, if they're present
 -include vendor/asus/moorefield/fhd/BoardConfigVendor.mk
 
