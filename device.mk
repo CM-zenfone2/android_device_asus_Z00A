@@ -74,6 +74,10 @@ PRODUCT_PACKAGES += \
     camera.fhd \
     libs3cjpeg
 
+# GPS
+PRODUCT_COPY_FILES += \
+    device/asus/moorefield/fhd/configs/gps.xml:system/etc/gps.xml
+
 # specific management of audio_policy.conf
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/configs/audio_policy.conf:system/etc/audio_policy.conf

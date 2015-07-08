@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glgps xmlns="http://www.glpals.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.glpals.com/ glconfig.xsd" >
+  <!--HAL Configuration-->
+  <hal
+       PortName="/dev/gps/ttyGPS"
+       BaudRate="921600"
+       LogEnabled="false"
+       LogDirectory="/sdcard/gps/broadcom"
+       CtrlPipe="/data/gps/glgpsctrl"
+       GpioNStdbyPath="/sys/devices/platform/intel_mid_gps/intel_mid_gps/enable"
+       GpioDelayMs="130"
+       NvStorageDir="/data/gps/"
+       NmeaOutName="/data/gps/nmeapipe"
+       SuplEnable="true"
+       SuplMsbCapable="true"
+       SuplMsaCapable="true"
+       SuplLppCapable="true"
+       SuplOtdoaCapable="true"
+       SuplEcidCapable="false"
+       SuplUseApn="false"
+       SuplVersion="2"
+       SuplMinorVersion="0"
+       SuplTlsEnable="false"
+       SuplTlsCertPath="/data/gps/gps.cer"
+       SuplTlsStopForInvPath="true"
+       SuplSslMethod="TLSv1_1"
+       SuplSslVerify="none"
+       SuplLogEnable="false"
+       SuplLogFullName="/data/gps/log/supllog.txt"
+       SuplServer="supl.google.com"
+       SuplPort="7276"
+       HttpSyncLto="true"
+       LtoSyncThresholdDays="1"
+       LtoFileName="lto2.dat"
+       LtoDir="/data/gps/"
+       HulaEnable="true"
+       HulaSensorMask="0xD"
+       GpsPowerControlEnable="true"
+       GpsPowerControlSysPath="/dev/gps/ttyGPSPowerControl"
+       GpsPowerControlEnableArg="auto"
+       GpsPowerControlDisableArg="on"
+       ReAidingOnHotStart="false"
+       AssertEnabled="false"
+       WakeLock="geo"
+       ReAidingRetryCount="20"
+       ReAidingRetryIntervalSec="3" 
+  />
+
+  <gll
+       LogPriMask="LOG_INFO"
+       LogFacMask="LOG_GLLAPI | LOG_NMEA | LOG_RAWDATA | LOG_GLLIO"
+       FrqPlan="FRQ_PLAN_26MHZ_2PPM"
+       RfType="GL_RF_47531_BRCM_EXT_LNA"
+       BurstMode="true,10,20,0"
+       PsfEnablePedVdr="true"
+       PsfEnablePedVdrStringent="false"
+       PmmPercent="50"
+  />
+
+  <gll_features
+       EnableLowPowerPmm="false"
+       EnableLowPowerPedestrian="false"
+       EnableLowPowerDriving="false"
+  />
+
+</glgps>
