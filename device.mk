@@ -76,7 +76,11 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
+    device/asus/moorefield/fhd/configs/gps.conf:system/etc/gps.conf \
     device/asus/moorefield/fhd/configs/gps.xml:system/etc/gps.xml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.spid.gps.tty=ttyMFD2
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -133,7 +133,6 @@ bin/sl_si_service
 bin/customize_service
 bin/nvm_server
 bin/sensorhubd
-bin/gpsd
 bin/mmgr
 bin/logcontrol
 
@@ -237,6 +236,10 @@ etc/firmware/topaz.bin.verf
 etc/firmware/vsp.bin.prod
 etc/firmware/vsp.bin.verf
 etc/firmware/vtsv_lib_1495.bin
+
+# GPS
+bin/gpsd
+lib/hw/gps.mofd_v1.so
 
 # Lights
 lib/hw/lights.mofd_v1.so
