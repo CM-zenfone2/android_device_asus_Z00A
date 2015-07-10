@@ -60,6 +60,11 @@
          capability can provide power savings when wifi needs to be always kept on. -->
     <bool name="config_wifi_background_scan_support">true</bool>
 
+    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
+         it causes the device to wake up.
+         The default is false. -->
+    <bool name="config_lidControlsSleep">true</bool>
+
     <!-- This string array should be overridden by the device to present a list of network
          attributes.  This is used by the connectivity manager to decide which networks can coexist
          based on the hardware -->
