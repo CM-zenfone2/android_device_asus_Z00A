@@ -1,5 +1,0 @@
-#!/system/bin/sh
-
-    cat /proc/kmsg > /data/data/kmsg.txt
-
-exit 0 
