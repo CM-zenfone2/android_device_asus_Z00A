@@ -1,6 +1,6 @@
 key 158     BACK                  VIRTUAL
 key 102     HOME                  VIRTUAL
-key 249     APP_SWITCH            VIRTUAL
+key 139     APP_SWITCH            VIRTUAL
 #key 116     GESTURE_DOUBLE_CLICK  VIRTUAL
 #key 46      GESTURE_C             VIRTUAL
 #key 18      GESTURE_E             VIRTUAL
