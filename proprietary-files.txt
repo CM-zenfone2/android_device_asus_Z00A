@@ -243,6 +243,7 @@ vendor/lib/libIMGegl.so
 vendor/lib/libsrv_um.so
 vendor/lib/libusc.so
 vendor/lib/libglslcompiler.so
+vendor/lib/liboclcompiler.so
 vendor/lib/libpvrANDROID_WSEGL.so
 vendor/lib/libpvr2d.dbg
 vendor/lib/libpvr2d.so
@@ -262,7 +263,7 @@ bin/nvm_server
 bin/sensorhubd
 bin/mmgr
 bin/logcontrol
-
+bin/houdini
 lib/libhoudini.so
 
 # Firmware
