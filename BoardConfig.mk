@@ -24,3 +24,18 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 59261286400
 
 # Use the non-open-source parts, if they're present
 -include vendor/asus/Z00A/BoardConfigVendor.mk
+
+# TWRP
+TW_THEME := portrait_hdpi
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_INCLUDE_CRYPTO := true
+# We don't currently have SuperSU binaries for x86, need to correct this at some point
+TW_EXCLUDE_SUPERSU := true
+TW_NO_USB_STORAGE := true
+# Our parted binary is armv7 only so disable partitioning since it won't work anyway
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_INCLUDE_NTFS_3G := true
+# Fix slow wiping
+BOARD_SUPPRESS_EMMC_WIPE := true
+RECOVERY_VARIANT := twrp
