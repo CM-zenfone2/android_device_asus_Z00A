@@ -37,10 +37,25 @@
              android:allowMassStorage="true" />
 
     <!-- external USB OTG storage -->
-    <storage android:mountPoint="/storage/usbdisk"
+    <storage android:mountPoint="/storage/USBdisk1"
              android:storageDescription="@string/storage_usb"
              android:primary="false"
-             android:emulated="false"
+             android:removable="true" />
+    <storage android:mountPoint="/storage/USBdisk2"
+             android:storageDescription="@string/storage_usb"
+             android:primary="false"
+             android:removable="true" />
+    <storage android:mountPoint="/storage/USBdisk3"
+             android:storageDescription="@string/storage_usb"
+             android:primary="false"
+             android:removable="true" />
+    <storage android:mountPoint="/storage/USBdisk4"
+             android:storageDescription="@string/storage_usb"
+             android:primary="false"
+             android:removable="true" />
+    <storage android:mountPoint="/storage/USBdisk5"
+             android:storageDescription="@string/storage_usb"
+             android:primary="false"
              android:removable="true" />
 
 </StorageList>
