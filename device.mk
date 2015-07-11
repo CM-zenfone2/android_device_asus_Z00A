@@ -85,7 +85,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.status.polling.enable=0 \
-    rild.libpath=/system/lib/librapid-ril-core.so
+    rild.libpath=/system/lib/librapid-ril-core.so \
+    ro.telephony.default_network=9
 
 # specific management of audio_policy.conf
 PRODUCT_COPY_FILES += \
