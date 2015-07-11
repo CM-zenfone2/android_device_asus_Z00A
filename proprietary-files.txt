@@ -103,7 +103,43 @@ lib/arm/libwilhelm.so
 lib/arm/libz.so
 lib/arm/linker
 
-# Camera
+# Audio
+etc/asound.conf
+etc/route_criteria.conf
+# Uncommenting this one will cause a bootloop:
+#vendor/etc/route_criteria.conf
+etc/tuning/audio/layout_probes.xml
+etc/tuning/audio/layout_topology.xml
+etc/tuning/audio/layout_types.xml
+etc/tuning/audio/layout_ui.xml
+lib/audio.routemanager.so
+lib/hw/audio.codec_offload.mofd_v1.so
+lib/hw/audio.hdmi.mofd_v1.so
+lib/hw/audio.primary.mofd_v1.so
+lib/libaudioresample.so
+lib/libicepower.so
+lib/libtinycompress.so
+lib/libtinyprobe.so
+lib/libevent-listener.so
+lib/libinterface-provider-lib.so
+lib/libmodem-audio-collection.so
+lib/libparameter.so
+lib/libproperty.so
+lib/libinterface-provider.so
+lib/libmamgr-xmm.so
+lib/libtinyxml.so
+lib/parameter-framework-plugins/Audio/libremoteparameter-subsystem.so
+lib/parameter-framework-plugins/Audio/libtinyalsa_custom-subsystem.so
+lib/parameter-framework-plugins/Audio/libimc-subsystem.so
+lib/parameter-framework-plugins/Audio/libpower-subsystem.so
+lib/parameter-framework-plugins/Audio/libprobe-subsystem.so
+lib/parameter-framework-plugins/Audio/libtinyalsa-subsystem.so
+lib/parameter-framework-plugins/System/libproperty-subsystem.so
+lib/parameter-framework-plugins/Route/libroute-subsystem.so
+lib/parameter-framework-plugins/Fs/libfs-subsystem.so
+lib/soundfx/liblpepreprocessing.so
+usr/share/alsa/alsa.conf
+
 # Camera
 etc/atomisp/00gc2235.aiqb
 etc/atomisp/00imx134.aiqb
