@@ -1,0 +1,11 @@
+/system 	 ext4    /dev/block/by-name/system
+/cache  	 ext4    /dev/block/by-name/cache
+/config 	 ext4    /dev/block/by-name/config            flags=backup=1
+/data   	 ext4    /dev/block/by-name/data   	      flags=encryptable=/factory/userdata_footer
+/factory	 ext4    /dev/block/by-name/factory           display="Factory"
+/boot        emmc    /dev/block/by-name/boot
+/recovery    emmc    /dev/block/by-name/recovery
+/splash      emmc    /dev/block/by-name/splashscreen          flags=backup=1;display="Splash";flashimg=1
+
+/external_sd vfat    /dev/block/mmcblk1p1 /dev/block/mmcblk1  flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg     vfat    /dev/block/sda1      /dev/block/sda      flags=removable;storage;display=USB-OTG
