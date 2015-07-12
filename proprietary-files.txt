@@ -172,6 +172,7 @@ etc/camera3_profiles.xml
 etc/camera_profiles.xml
 etc/cms_device_config.xml
 etc/cms_throttle_config.xml
+etc/DataSet/ispDB/ParameterDB.db
 lib/DataSet/ditSCidGen/msgchk.db
 lib/DataSet/ISP/libxditk_isp.bin
 lib/DataSet/SR/SR_01.bin
@@ -229,6 +230,7 @@ lib/libxditk_DIT_Manager.so
 lib/libxditk_DIT_Moorefield.so
 lib/libxditk_ISP.so
 lib/libxditk_SR.so
+media/cameraConfig/style.cng
 
 # EGL
 bin/dpstmgr
