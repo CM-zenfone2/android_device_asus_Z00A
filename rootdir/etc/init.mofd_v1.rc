@@ -311,9 +311,8 @@ on post-fs
     setprop persist.asus.glove 0
 
 # Permissions for Touch dclick Mode
-    chown system system /sys/bus/i2c/devices/i2c-7/7-0038/ftsdclickmode
-
-    setprop persist.asus.dclick 0
+    chown system radio /sys/bus/i2c/devices/i2c-7/7-0038/ftsdclickmode
+    chmod 0660 /sys/bus/i2c/devices/i2c-7/7-0038/ftsdclickmode
 
 # Permissions for Touch Gesture Mode
     chown system system /sys/bus/i2c/devices/i2c-7/7-0038/ftsgesturemode
@@ -330,12 +329,6 @@ on property:persist.asus.glove=0
 
 on property:persist.asus.glove=1
     write /sys/bus/i2c/devices/i2c-7/7-0038/ftsglovemode 1
-
-on property:persist.asus.dclick=0
-    write /sys/bus/i2c/devices/i2c-7/7-0038/ftsdclickmode 0
-
-on property:persist.asus.dclick=1
-    write /sys/bus/i2c/devices/i2c-7/7-0038/ftsdclickmode 1
 
 on property:persist.asus.gesture.type=*
     write /sys/bus/i2c/devices/i2c-7/7-0038/ftsgesturemode ${persist.asus.gesture.type}
