@@ -1,3 +1,10 @@
+# Uncommenting these one will cause a bootloop or boot failure:
+# Audio:
+#vendor/etc/route_criteria.conf
+# Camera
+#etc/DataSet/ispDB/ParameterDB.db
+#media/cameraConfig/style.cng
+
 # Arm blobs
 lib/arm/cpuinfo
 lib/arm/libandroidfw.so
@@ -106,8 +113,6 @@ lib/arm/linker
 # Audio
 etc/asound.conf
 etc/route_criteria.conf
-# Uncommenting this one will cause a bootloop:
-#vendor/etc/route_criteria.conf
 etc/tuning/audio/layout_probes.xml
 etc/tuning/audio/layout_topology.xml
 etc/tuning/audio/layout_types.xml
@@ -172,7 +177,6 @@ etc/camera3_profiles.xml
 etc/camera_profiles.xml
 etc/cms_device_config.xml
 etc/cms_throttle_config.xml
-etc/DataSet/ispDB/ParameterDB.db
 lib/DataSet/ditSCidGen/msgchk.db
 lib/DataSet/ISP/libxditk_isp.bin
 lib/DataSet/SR/SR_01.bin
@@ -230,7 +234,6 @@ lib/libxditk_DIT_Manager.so
 lib/libxditk_DIT_Moorefield.so
 lib/libxditk_ISP.so
 lib/libxditk_SR.so
-media/cameraConfig/style.cng
 
 # EGL
 bin/dpstmgr
