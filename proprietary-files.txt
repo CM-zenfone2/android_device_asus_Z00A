@@ -1,6 +1,4 @@
 # Uncommenting these one will cause a bootloop or boot failure:
-# Audio:
-#vendor/etc/route_criteria.conf
 # Camera
 #etc/DataSet/ispDB/ParameterDB.db
 #media/cameraConfig/style.cng
@@ -144,6 +142,8 @@ lib/parameter-framework-plugins/Route/libroute-subsystem.so
 lib/parameter-framework-plugins/Fs/libfs-subsystem.so
 lib/soundfx/liblpepreprocessing.so
 usr/share/alsa/alsa.conf
+# The following needs http://review.cyanogenmod.org/#/c/103003/
+vendor/etc/route_criteria.conf
 
 # Camera
 etc/atomisp/00gc2235.aiqb
