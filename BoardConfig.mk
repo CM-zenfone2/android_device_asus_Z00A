@@ -101,9 +101,6 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/moorefield/fhd/bluetooth
 
-# CM Hardware
-BOARD_HARDWARE_CLASS += device/asus/moorefield/fhd/cmhw
-
 # IMG graphics
 BOARD_GFX_REV := RGX6400
 ENABLE_IMG_GRAPHICS := true
