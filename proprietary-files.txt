@@ -373,6 +373,17 @@ lib/hw/gps.mofd_v1.so
 # Lights
 lib/hw/lights.mofd_v1.so
 
+# Media
+lib/libdx_cc7.so
+lib/libmixvbp_h264secure.so
+lib/libmixvbp_h264.so
+lib/libmixvbp_mpeg4.so
+lib/libmixvbp.so
+lib/libmixvbp_vc1.so
+lib/libmixvbp_vp8.so
+lib/libsepdrm_cc54.so
+lib/libsephdcp2x.so
+
 # Power HAL
 lib/hw/power.mofd_v1.so
 
