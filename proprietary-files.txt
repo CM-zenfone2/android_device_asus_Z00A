@@ -218,7 +218,6 @@ lib/libia_nvm.so
 lib/libia_panorama.so
 lib/libifp.so
 lib/libimf.so
-lib/libintelmetadatabuffer.so
 lib/libintlc.so
 lib/libirng.so
 lib/libmix_imageencoder.so
