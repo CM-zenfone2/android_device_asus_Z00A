@@ -63,6 +63,7 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    libtinycompress \
     libtinyalsa \
     audio.a2dp.default \
     audio.primary.fhd \

@@ -116,7 +116,6 @@ lib/hw/audio.hdmi.mofd_v1.so
 lib/hw/audio.primary.mofd_v1.so
 lib/libaudioresample.so
 lib/libicepower.so
-lib/libtinycompress.so
 lib/libtinyprobe.so
 lib/libevent-listener.so
 lib/libinterface-provider-lib.so
