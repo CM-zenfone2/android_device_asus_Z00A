@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Thermal Management Configuration File -->
+<!--  Intel Corporation 2011-2012  -->
+<thermalconfig>
+  <!-- Config xml file version should be in sync with iTUX version number-->
+  <ConfigFileVersion>3.0</ConfigFileVersion>
+  <!--Platform Parameters-->
+  <PlatformInfo>
+      <PlatformName>mofd</PlatformName>
+      <!--namely NORMAL, WARNING, ALERT, and CRITICAL.-->
+      <!--in the increasing order of thermal severity-->
+      <!--standard sensor devices register as /sys/class/thermal/thermal_zoneX. Herein
+      referred as 'Path Enumerated at Runtime by Framework in Kernel Thermal' or PERFKT-->
+  </PlatformInfo>
+
+  <!-- sensor information -->
+      <!-- name matching 'type' file in below sensor path -->
+      <!--sysfs path for InputTemp & other files. "auto" implies look in PERFKT path-->
+      <!--InputTemp: sysfs Interface names to read Temperature in milli degree celsius
+      for PERFKT sensors this file is called 'temp'-->
+      <!--temp2_threshold2: sysfs Interface names to set lower threshold Temperature in
+      milli degree celsius for PERFKT sensors this file is called 'trip_point_1_temp'.
+      for PERFKT sensors set "auto"-->
+      <!--temp2_threshold1: sysfs Interface names to set lower threshold Temperature in
+      milli degree celsius for PERFKT sensors this file is called 'trip_point_0_temp'.
+      for PERFKT sensors set "auto"-->
+      <!--UEventDevPath for event observer to listen. "auto" for PERFKT sensors-->
+
+  <Sensor>
+      <SensorName>SYSTHERM1</SensorName>
+<!--
+      <SensorPath>auto</SensorPath>
+      <InputTemp>temp</InputTemp>
+      <HighTemp>auto</HighTemp>
+      <LowTemp>auto</LowTemp>
+-->
+  </Sensor>
+
+  <Sensor>
+      <SensorName>SYSTHERM0</SensorName>
+<!--
+      <SensorPath>auto</SensorPath>
+      <InputTemp>temp</InputTemp>
+      <HighTemp>auto</HighTemp>
+      <LowTemp>auto</LowTemp>
+-->
+  </Sensor>
+
+  <Sensor>
+      <SensorName>max17047_battery</SensorName>
+<!--
+      <SensorPath>auto</SensorPath>
+      <InputTemp>temp</InputTemp>
+      <HighTemp>trip_point1</HighTemp>
+      <LowTemp>trip_point0</LowTemp>
+-->
+  </Sensor>
+
+  <Sensor>
+      <!--Modem Sensor IDs are enumerated from OemtelephonyConstants class
+      during runtime-->
+      <SensorName>Modem_RF</SensorName>
+      <SensorPath>none</SensorPath>
+      <InputTemp>invalid</InputTemp>
+  </Sensor>
+
+  <Sensor>
+      <SensorName>Modem_BB</SensorName>
+      <SensorPath>none</SensorPath>
+      <InputTemp>invalid</InputTemp>
+  </Sensor>
+
+  <Sensor>
+      <SensorName>Modem_PMU</SensorName>
+      <SensorPath>none</SensorPath>
+      <InputTemp>invalid</InputTemp>
+  </Sensor>
+
+  <Sensor>
+      <SensorName>Modem_PA</SensorName>
+      <SensorPath>none</SensorPath>
+      <InputTemp>invalid</InputTemp>
+  </Sensor>
+
+  <Sensor>
+      <SensorName>SoC_DTS0</SensorName>
+      <SensorPath>auto</SensorPath>
+      <InputTemp>temp</InputTemp>
+      <HighTemp>auto</HighTemp>
+      <LowTemp>auto</LowTemp>
+  </Sensor>
+
+<Profile>
+  <Name>Default</Name>
+<!--Thermal Zones-->
+  <Zone>
+       <ZoneID>2</ZoneID>
+       <ZoneName>FrontSkin</ZoneName>
+       <ZoneLogic>Raw</ZoneLogic>
+       <SupportsUEvent>0</SupportsUEvent>
+       <DebounceInterval>2000</DebounceInterval>
+       <PollDelay>
+              <DelayNormal>15000</DelayNormal>
+              <DelayWarning>10000</DelayWarning>
+              <DelayAlert>5000</DelayAlert>
+       </PollDelay>
+       <ZoneThreshold>
+              <ZoneThresholdNormal>55000</ZoneThresholdNormal>
+              <ZoneThresholdWarning>65000</ZoneThresholdWarning>
+              <ZoneThresholdAlert>80000</ZoneThresholdAlert>
+       </ZoneThreshold>
+       <SensorAttrib>
+           <SensorName>SYSTHERM0</SensorName>
+        </SensorAttrib>
+  </Zone>
+<!-- CPU/SoC dts zone disabled since Punit TP feature enabled as workaround for
+CPU/SoC DTS based prochot avoidance/interrupt issues -->
+<!--
+  <Zone>
+       <ZoneID>3</ZoneID>
+       <ZoneName>SoC</ZoneName>
+       <ZoneLogic>Raw</ZoneLogic>
+       <SupportsUEvent>0</SupportsUEvent>
+-->
+       <!-- Keeping DebounceInterval to 1 Degree to avoid lower side temp transition -->
+<!--
+       <DebounceInterval>1000</DebounceInterval>
+       <PollDelay>
+              <DelayNormal>30000</DelayNormal>
+              <DelayWarning>30000</DelayWarning>
+              <DelayAlert>30000</DelayAlert>
+       </PollDelay>
+       <ZoneThreshold>
+              <ZoneThresholdNormal>85000</ZoneThresholdNormal>
+              <ZoneThresholdWarning>87000</ZoneThresholdWarning>
+              <ZoneThresholdAlert>89000</ZoneThresholdAlert>
+       </ZoneThreshold>
+       <SensorAttrib>
+           <SensorName>SoC_DTS0</SensorName>
+       </SensorAttrib>
+  </Zone>
+-->
+    
+
+</Profile>
+</thermalconfig>
