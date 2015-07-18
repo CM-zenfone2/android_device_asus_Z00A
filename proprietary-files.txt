@@ -1,4 +1,39 @@
 # Arm blobs
+lib/arm/nb/libEGL.so
+lib/arm/nb/libGLESv1_CM.so
+lib/arm/nb/libGLESv2.so
+lib/arm/nb/libGLESv3.so
+lib/arm/nb/libOpenMAXAL.so
+lib/arm/nb/libOpenSLES.so
+lib/arm/nb/libandroid_runtime.so
+lib/arm/nb/libandroid.so
+lib/arm/nb/libandroidfw.so
+lib/arm/nb/libart.so
+lib/arm/nb/libaudioflinger.so
+lib/arm/nb/libbinder.so
+lib/arm/nb/libc.so
+lib/arm/nb/libcamera_client.so
+lib/arm/nb/libcutils.so
+lib/arm/nb/libdl.so
+lib/arm/nb/libft2.so
+lib/arm/nb/libgui.so
+lib/arm/nb/libhardware_legacy.so
+lib/arm/nb/libhwui.so
+lib/arm/nb/libicui18n.so
+lib/arm/nb/libicuuc.so
+lib/arm/nb/libjnigraphics.so
+lib/arm/nb/libm.so
+lib/arm/nb/libmediandk.so
+lib/arm/nb/libmedia.so
+lib/arm/nb/libnativehelper.so
+lib/arm/nb/libpixelflinger.so
+lib/arm/nb/libskia.so
+lib/arm/nb/libsqlite.so
+lib/arm/nb/libstagefright.so
+lib/arm/nb/libsurfaceflinger.so
+lib/arm/nb/libui.so
+lib/arm/nb/libutils.so
+lib/arm/nb/libz.so
 lib/arm/cpuinfo
 lib/arm/libandroidfw.so
 lib/arm/libandroid_runtime.so
@@ -232,6 +267,7 @@ media/cameraConfig/style.cng
 # EGL
 bin/dpstmgr
 lib/libdm_dpst.so
+lib/libpvr2d.sp
 vendor/bin/hwperfbin2jsont
 vendor/bin/pvrdebug
 vendor/bin/pvrhwperf
@@ -262,8 +298,6 @@ bin/nvm_server
 bin/sensorhubd
 bin/mmgr
 bin/logcontrol
-bin/houdini
-lib/libhoudini.so
 
 # Firmware
 # *** THIS iS A DUMP OF ALL FILES IN /system/etc/firmware
@@ -367,6 +401,12 @@ etc/firmware/vtsv_lib_1495.bin
 # GPS
 bin/gpsd
 lib/hw/gps.mofd_v1.so
+
+# Houdini
+etc/binfmt_misc/arm_dyn
+etc/binfmt_misc/arm_exe
+bin/houdini
+lib/libhoudini.so
 
 # Lights
 lib/hw/lights.mofd_v1.so
