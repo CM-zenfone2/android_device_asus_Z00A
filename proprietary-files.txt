@@ -264,10 +264,19 @@ lib/libxditk_ISP.so
 lib/libxditk_SR.so
 media/cameraConfig/style.cng
 
+# DRM
+lib/liboemcrypto.so
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/libWVStreamControlAPI_L1.so
+vendor/lib/libdrmdecrypt.so
+vendor/lib/libwvdrm_L1.so
+vendor/lib/libwvm.so
+
 # EGL
 bin/dpstmgr
 lib/libdm_dpst.so
-lib/libpvr2d.sp
+lib/libpvr2d.so
 vendor/bin/hwperfbin2jsont
 vendor/bin/pvrdebug
 vendor/bin/pvrhwperf
