@@ -263,6 +263,14 @@ lib/libxditk_DIT_Moorefield.so
 lib/libxditk_ISP.so
 lib/libxditk_SR.so
 media/cameraConfig/style.cng
+vendor/firmware/00imx135-0-0x2-0x1.drvb
+vendor/firmware/00imx135-0-0x4-0.drvb
+vendor/firmware/00imx135-0-0x8-0.drvb
+vendor/firmware/00imx135-0-0x8-0x1.drvb
+vendor/firmware/00imx135-0-0x8-0x2.drvb
+vendor/firmware/00imx135-0-0x8-0x5.drvb
+vendor/firmware/00ov8830-0-0x2-0.drvb
+vendor/firmware/01s5k8aay.drvb
 
 # DRM
 lib/liboemcrypto.so
