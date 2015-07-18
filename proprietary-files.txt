@@ -440,6 +440,7 @@ lib/libmixvbp_mpeg4.so
 lib/libmixvbp.so
 lib/libmixvbp_vc1.so
 lib/libmixvbp_vp8.so
+lib/libOMXVideoDecoderAVCSecure.so
 lib/libsepdrm_cc54.so
 lib/libsephdcp2x.so
 lib/libstlport-mfx.so
