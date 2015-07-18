@@ -206,6 +206,16 @@ etc/camera_profiles.xml
 etc/cms_device_config.xml
 etc/cms_throttle_config.xml
 etc/DataSet/ispDB/ParameterDB.db
+etc/firmware/isp_acc_chromaproc_css21_2401.bin
+etc/firmware/isp_acc_deghosting_v2_css21_2401.bin
+etc/firmware/isp_acc_lumaproc_css21_2401.bin
+etc/firmware/isp_acc_mfnr_em_css21_2401.bin
+etc/firmware/isp_acc_multires_v2_css21_2401.bin
+etc/firmware/isp_acc_sce_em_css21_2401.bin
+etc/firmware/isp_acc_warping_v2_css21_2401.bin
+etc/firmware/isp_acc_warping_v2_em_css21_2401.bin
+etc/firmware/shisp_2401a0_legacy_v21.bin
+etc/firmware/shisp_2401a0_v21.bin
 lib/DataSet/ditSCidGen/msgchk.db
 lib/DataSet/ISP/libxditk_isp.bin
 lib/DataSet/SR/SR_01.bin
@@ -323,21 +333,10 @@ bin/logcontrol
 #     we don't really need
 etc/firmware/aac_dec_1495.bin
 etc/firmware/audclass_lib_1495.bin
-etc/firmware/BCM4335C0_003.001.009.0105.0563_Asus_ZE551ML.hcd
 etc/firmware/dfw_sst.bin
-etc/firmware/fw_bcmdhd_apsta.bin
-etc/firmware/fw_bcmdhd.bin
 etc/firmware/FW_INFO.bin
 etc/firmware/fw_sst_1495.bin
 etc/firmware/geq_lib_1495.bin
-etc/firmware/isp_acc_chromaproc_css21_2401.bin
-etc/firmware/isp_acc_deghosting_v2_css21_2401.bin
-etc/firmware/isp_acc_lumaproc_css21_2401.bin
-etc/firmware/isp_acc_mfnr_em_css21_2401.bin
-etc/firmware/isp_acc_multires_v2_css21_2401.bin
-etc/firmware/isp_acc_sce_em_css21_2401.bin
-etc/firmware/isp_acc_warping_v2_css21_2401.bin
-etc/firmware/isp_acc_warping_v2_em_css21_2401.bin
 etc/firmware/M10MO_fw.bin
 etc/firmware/mp3_dec_1495.bin
 etc/firmware/msvdx.bin.prod
@@ -353,8 +352,6 @@ etc/firmware/s3202_gff.img
 etc/firmware/s3202_ogs.img
 etc/firmware/s3400_cgs.img
 etc/firmware/s3400_igzo.img
-etc/firmware/shisp_2401a0_legacy_v21.bin
-etc/firmware/shisp_2401a0_v21.bin
 etc/firmware/topaz.bin.prod
 etc/firmware/topaz.bin.verf
 etc/firmware/vsp.bin.prod
@@ -772,3 +769,8 @@ lib/hw/sensors.mofd_v1.so
 lib/libcontextarbitor.so
 lib/libnetd_client.so
 lib/libsensorhub.so
+
+# WiFi
+etc/firmware/BCM4335C0_003.001.009.0105.0563_Asus_ZE551ML.hcd
+etc/firmware/fw_bcmdhd_apsta.bin
+etc/firmware/fw_bcmdhd.bin
