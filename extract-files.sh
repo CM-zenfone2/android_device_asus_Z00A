@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set -e
-export DEVICE=moorefield/fhd
+export DEVICE=Z00A
 export VENDOR=asus
 
 if [ $# -eq 0 ]; then
@@ -20,7 +20,7 @@ else
   fi
 fi
 
-BASE=../../../../vendor/$VENDOR/$DEVICE/proprietary
+BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $BASE/*
 
 for FILE in `egrep -v '(^#|^$)' proprietary-files.txt`; do

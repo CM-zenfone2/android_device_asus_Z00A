@@ -26,13 +26,13 @@ TARGET_CPU_ABI_LIST_32_BIT := x86,armeabi-v7a,armeabi
 TARGET_CPU_SMP := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := x86_64-linux-android-
 
-TARGET_RELEASETOOLS_EXTENSIONS := device/asus/moorefield/fhd
+TARGET_RELEASETOOLS_EXTENSIONS := device/asus/Z00A
 
 TARGET_BOARD_PLATFORM := moorefield
 TARGET_BOOTLOADER_BOARD_NAME := moorefield
 TARGET_USERIMAGES_USE_EXT4 := true
 
-TARGET_SPECIFIC_HEADER_PATH := device/asus/moorefield/fhd/include
+TARGET_SPECIFIC_HEADER_PATH := device/asus/Z00A/include
 
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -51,13 +51,13 @@ BOARD_FUNCTIONFS_HAS_SS_COUNT := true
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
-TARGET_RECOVERY_FSTAB := device/asus/moorefield/fhd/rootdir/etc/fstab.mofd_v1
+TARGET_RECOVERY_FSTAB := device/asus/Z00A/rootdir/etc/fstab.mofd_v1
 
 # Bootloader
-TARGET_OTA_ASSERT_DEVICE := Z00A,Z008,fhd,hd
+TARGET_OTA_ASSERT_DEVICE := Z00A
 
 # Hardware
-BOARD_HARDWARE_CLASS := device/asus/moorefield/fhd/cmhw
+BOARD_HARDWARE_CLASS := device/asus/Z00A/cmhw
 
 # Use dlmalloc
 MALLOC_IMPL := dlmalloc
@@ -101,7 +101,7 @@ WIFI_DRIVER_FW_PATH_STA     := "/system/etc/firmware/fw_bcmdhd.bin"
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/moorefield/fhd/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/asus/Z00A/bluetooth
 
 # IMG graphics
 BOARD_GFX_REV := RGX6400
@@ -120,7 +120,7 @@ BOARD_USES_TINY_ALSA_AUDIO := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 
-BOARD_EGL_CFG := device/asus/moorefield/fhd/configs/egl.cfg
+BOARD_EGL_CFG := device/asus/Z00A/configs/egl.cfg
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.opengles.version = 196608 \
@@ -177,7 +177,7 @@ INTEL_DPST := true
 # bootstub as 2nd bootloader
 TARGET_BOOTLOADER_IS_2ND := true
 
-BOARD_SEPOLICY_DIRS := device/asus/moorefield/fhd/sepolicy
+BOARD_SEPOLICY_DIRS := device/asus/Z00A/sepolicy
 BOARD_SEPOLICY_UNION := \
     bluetooth.te \
     btfwloader.te \
@@ -206,7 +206,7 @@ INTEL_VIDEO_XPROC_SHARING := true
 BOARD_RIL_SUPPORTS_MULTIPLE_CLIENTS := true
 
 # Use the non-open-source parts, if they're present
--include vendor/asus/moorefield/fhd/BoardConfigVendor.mk
+-include vendor/asus/Z00A/BoardConfigVendor.mk
 
 # Recipes to generate prebuilts
 -include device/intel/common/external/external.mk
