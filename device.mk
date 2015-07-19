@@ -264,6 +264,10 @@ PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/keylayout/Vendor_0b05_Product_17fc.kl:system/usr/keylayout/Vendor_0b05_Product_17fc.kl \
     device/asus/moorefield/fhd/keylayout/Vendor_0b05_Product_1803.kl:system/usr/keylayout/Vendor_0b05_Product_1803.kl
 
+# Keyhandler
+PRODUCT_PACKAGES += \
+    com.cyanogenmod.keyhandler
+
 #GFX Config
 PRODUCT_COPY_FILES += \
     device/asus/moorefield/fhd/powervr.ini:system/etc/powervr.ini
