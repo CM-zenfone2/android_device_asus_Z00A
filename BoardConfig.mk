@@ -56,6 +56,9 @@ TARGET_RECOVERY_FSTAB := device/asus/moorefield/fhd/rootdir/etc/fstab.mofd_v1
 # Bootloader
 TARGET_OTA_ASSERT_DEVICE := Z00A,Z008,fhd,hd
 
+# Hardware
+BOARD_HARDWARE_CLASS := device/asus/moorefield/fhd/cmhw
+
 # Use dlmalloc
 MALLOC_IMPL := dlmalloc
 
