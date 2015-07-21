@@ -173,6 +173,10 @@ lib/soundfx/liblpepreprocessing.so
 usr/share/alsa/alsa.conf
 vendor/etc/route_criteria.conf
 
+# Bluetooth
+etc/firmware/BCM4335C0_003.001.009.0105.0563_Asus_ZE551ML.hcd
+vendor/lib/libbt-vendor.so
+
 # Camera
 etc/atomisp/00gc2235.aiqb
 etc/atomisp/00imx134.aiqb
@@ -771,6 +775,5 @@ lib/libnetd_client.so
 lib/libsensorhub.so
 
 # WiFi
-etc/firmware/BCM4335C0_003.001.009.0105.0563_Asus_ZE551ML.hcd
 etc/firmware/fw_bcmdhd_apsta.bin
 etc/firmware/fw_bcmdhd.bin
