@@ -71,10 +71,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default
 
-# Camera
-PRODUCT_PACKAGES += \
-    libs3cjpeg
-
 # GPS
 PRODUCT_COPY_FILES += \
     device/asus/Z00A/configs/gps.conf:system/etc/gps.conf \
@@ -125,7 +121,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IMG graphics
 PRODUCT_PACKAGES += \
-    IMG_graphics \
     hwcomposer.moorefield
 
 #Video
@@ -144,31 +139,8 @@ PRODUCT_PACKAGES += \
 
 # Media SDK and OMX IL components
 PRODUCT_PACKAGES += \
-    libmfxsw32 \
-    libmfx_omx_core \
-    libmfx_omx_components_sw \
-    libgabi++-mfx \
-    libstlport-mfx \
     msvdx_bin \
     topaz_bin
-
-#video firmware
-PRODUCT_PACKAGES += \
-    msvdx.bin.0008.0000.0000 \
-    msvdx.bin.0008.0000.0001 \
-    msvdx.bin.0008.0002.0001 \
-    msvdx.bin.0008.0000.0002 \
-    msvdx.bin.000c.0001.0001 \
-    topaz.bin.0008.0000.0000 \
-    topaz.bin.0008.0000.0001 \
-    topaz.bin.0008.0000.0002 \
-    topaz.bin.0008.0002.0001 \
-    topaz.bin.000c.0001.0001 \
-    vsp.bin.0008.0000.0000 \
-    vsp.bin.0008.0000.0001 \
-    vsp.bin.0008.0000.0002 \
-    vsp.bin.0008.0002.0001 \
-    vsp.bin.000c.0001.0001
 
 # libva
 PRODUCT_PACKAGES += \
