@@ -417,17 +417,6 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor interactive
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor interactive
 
-    # Performance tweaks for interactive governor
-    # This should be handled by ueventd but we need to fix its uevent generation first
-    chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
-    chown system system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
-    chown system system /sys/devices/system/cpu/cpufreq/interactive/boostpulse
-    chown system system /sys/devices/system/cpu/cpufreq/interactive/touchboostpulse
-    chown system system /sys/devices/system/cpu/cpufreq/interactive/touchboostpulse_duration
-    chown system system /sys/devices/system/cpu/cpufreq/interactive/touchboost_freq
-    chmod 0220 /sys/devices/system/cpu/cpufreq/interactive/touchboostpulse
-    chmod 0220 /sys/devices/system/cpu/cpufreq/interactive/boostpulse
-
 # ASUS Product Demo
 on property:persist.sys.enableAPD=1
     mount ext4 /dev/block/by-name/APD /APD rw noatime context=u:object_r:demoapp_file:s0

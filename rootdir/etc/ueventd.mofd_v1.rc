@@ -68,3 +68,8 @@
 /sys/devices/virtual/thermal/thermal_zone*      trip_point_1_temp    0644 system system
 /sys/devices/virtual/thermal/thermal_zone*      trip_point_0_temp    0644 system system
 /sys/devices/virtual/thermal/thermal_zone*      emul_temp    0644 system system
+
+# CPUFreq Governors
+/sys/devices/system/cpu/cpufreq interactive/touchboost_freq             0644 system system
+/sys/devices/system/cpu/cpufreq interactive/touchboostpulse             0220 system system
+/sys/devices/system/cpu/cpufreq interactive/touchboostpulse_duration    0644 system system
