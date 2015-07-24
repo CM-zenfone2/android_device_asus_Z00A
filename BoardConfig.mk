@@ -174,6 +174,8 @@ BUILD_ARM_FOR_X86 := true
 
 # enabled to carry out all drawing operations performed on a View's canvas with GPU for 2D rendering pipeline.
 USE_OPENGL_RENDERER := true
+# DPST
+INTEL_DPST := true
 
 # bootstub as 2nd bootloader
 TARGET_BOOTLOADER_IS_2ND := true
@@ -202,9 +204,6 @@ BOARD_SEPOLICY_UNION := \
 # Camera
 INTEL_USE_CAMERA_UVC := true
 INTEL_VIDEO_XPROC_SHARING := true
-
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
 
 # Radio
 BOARD_RIL_SUPPORTS_MULTIPLE_CLIENTS := true

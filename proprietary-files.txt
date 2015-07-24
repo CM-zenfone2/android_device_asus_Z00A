@@ -296,6 +296,8 @@ vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 
 # EGL
+bin/dpstmgr
+lib/libdm_dpst.so
 lib/libpvr2d.so
 vendor/bin/hwperfbin2jsont
 vendor/bin/pvrdebug
@@ -369,6 +371,9 @@ etc/binfmt_misc/arm_dyn
 etc/binfmt_misc/arm_exe
 bin/houdini
 lib/libhoudini.so
+
+# Lights
+lib/hw/lights.mofd_v1.so
 
 # Media
 lib/libdx_cc7.so
