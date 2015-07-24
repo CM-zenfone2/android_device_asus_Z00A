@@ -148,7 +148,9 @@ PRODUCT_PACKAGES += \
     libmfx_omx_core \
     libmfx_omx_components_sw \
     libgabi++-mfx \
-    libstlport-mfx
+    libstlport-mfx \
+    msvdx_bin \
+    topaz_bin
 
 #video firmware
 PRODUCT_PACKAGES += \
