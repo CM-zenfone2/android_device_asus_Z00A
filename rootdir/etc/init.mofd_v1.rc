@@ -162,15 +162,6 @@ on boot
 #  Enable slow-motion playback
     setprop video.playback.slow-motion 1
 
-#  DPST - 0 to disable, 1 to enable
-    setprop intel.dpst.enable 1
-
-#  DPST ALG 4_5 for TNG
-    setprop intel.dpst.alg 3
-
-#  DPST USERLEVEL
-    setprop intel.dpst.userlevel 3
-
     #set dirty background bytes to 24MB to reduce USB MTP write latencies
     write /proc/sys/vm/dirty_background_bytes 25165824
 
@@ -410,11 +401,6 @@ service sensorhubd /system/bin/sensorhubd
     user system
     group system
     socket sensorhubd stream 660 system system
-
-service dpst /system/bin/dpstmgr
-    class main
-    user system
-    group system
 
 service rfid_monzaxd /system/bin/rfid_monzaxd
     class main

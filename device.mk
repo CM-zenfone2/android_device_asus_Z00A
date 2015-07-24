@@ -83,6 +83,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.spid.gps.tty=ttyMFD2
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.moorefield
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.status.polling.enable=0 \
