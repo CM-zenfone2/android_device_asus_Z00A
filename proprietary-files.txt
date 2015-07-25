@@ -268,6 +268,7 @@ lib/libifp.so
 lib/libimf.so
 lib/libintlc.so
 lib/libirng.so
+lib/libmix_imagedecoder.so
 lib/libmix_imageencoder.so
 lib/libsvml.so
 lib/libtbd.so
@@ -287,6 +288,8 @@ vendor/firmware/00ov8830-0-0x2-0.drvb
 vendor/firmware/01s5k8aay.drvb
 
 # DRM
+lib/libkeymaster.so
+lib/hw/keystore.moorefield.so
 lib/liboemcrypto.so
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
@@ -314,6 +317,8 @@ vendor/lib/libpvr2d.so
 vendor/lib/libPVROCL.so
 vendor/lib/libPVRScopeServices.so
 vendor/lib/libsrv_init.so
+vendor/lib/libufwriter.dbg
+vendor/lib/libufwriter.so
 vendor/lib/egl/libEGL_POWERVR_ROGUE.so
 vendor/lib/egl/libGLESv1_CM_POWERVR_ROGUE.so
 vendor/lib/egl/libGLESv2_POWERVR_ROGUE.so
@@ -373,6 +378,7 @@ lib/libhoudini.so
 # Media
 lib/libdx_cc7.so
 lib/libgabi++-mfx.so
+lib/libmdp_omx_core.so
 lib/libmfx_omx_components_sw.so
 lib/libmfx_omx_core.so
 lib/libmfxsw32.so
