@@ -45,7 +45,6 @@ static int write_int(char const *path, int value)
 
     already_warned = 0;
 
-    ALOGI("crpalmer: write_int: path %s, value %d", path, value);
     fd = open(path, O_RDWR);
 
     if (fd >= 0) {
