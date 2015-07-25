@@ -182,10 +182,6 @@ on post-fs-data
 
     chown system system /sys/class/drm/card0/gt_max_freq_mhz
 
-    #support Exfat ntfs format
-    insmod /lib/modules/texfat.ko
-    insmod /lib/modules/tntfs.ko
-
     #support emmc_total_size
     symlink /sys/devices/pci0000:00/0000:00:01.0/emmc_total_size /data/data/emmc_total_size
 
@@ -207,14 +203,6 @@ on charger
     # IMG Graphics specific setup. See also "service pvrsrvctl"
     # The permissions below should be tighter.
     chown system system /dev/card0
-
-    #Enable ISP related driver, so ISP can enter D0i3 state
-    insmod /lib/modules/libmsrlisthelper.ko
-    insmod /lib/modules/t4k37.ko
-    insmod /lib/modules/m10mo_isp.ko
-    insmod /lib/modules/ov5670.ko
-    insmod /lib/modules/sky81296.ko
-    insmod /lib/modules/atomisp-css2401a0_v21.ko dypool_enable=y repool_pgnr=39936 dypool_pgnr=39936
 
     start pvrsrvctl
     # reduce backlight

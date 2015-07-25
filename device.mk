@@ -38,7 +38,6 @@ PRODUCT_PACKAGES += \
     init.avc.rc \
     init.bt.rc \
     init.bt.vendor.rc \
-    init.camera.rc \
     init.class_main.sh \
     init.common.rc \
     init.config_init.rc \

@@ -1,11 +1,6 @@
-on init
+nnon init
     # Property set by AudioHAL to expose the routing status of VTSV use case to VTSV HAL
     setprop AudioComms.vtsv.routed false
-
-    # atomisp driver depends on these modules. So load these on init. atomisp
-    # driver is loaded from "on charger" trigger as well from init.common.rc
-    insmod /lib/modules/videobuf-core.ko
-    insmod /lib/modules/videobuf-vmalloc.ko
 
 service acmed /system/bin/acmed --tinyalsa --card rt5647audio --device 4 --android-cmd-socket acme_cmd --lipsync-android-socket acme_lipsync
     class main

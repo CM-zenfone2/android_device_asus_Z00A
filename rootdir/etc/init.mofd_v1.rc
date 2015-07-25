@@ -9,7 +9,6 @@ import init.nfc.rc
 import init.bt.rc
 import init.modem.rc
 import init.config_init.rc
-import init.camera.rc
 import init.logtool.rc
 
 #+++++++++++++++++++++lynn 2014/10/27 FAC++++++++++++++++++++++
@@ -28,17 +27,7 @@ on init
     mkdir /data/misc 01771 system misc
     mkdir /data/misc/audio 0770 audio audio
 
-    # Insert graphics driver
-    insmod /lib/modules/tngdisp.ko
     chmod 0600 /dev/dri/controlD64
-
-    insmod /lib/modules/hdmi_audio.ko
-
-    # Insert fps throttle driver
-    insmod /lib/modules/fps_throttle.ko
-
-    # Insert matrix for PnP measurements
-    insmod /lib/modules/matrix.ko
     chmod 0640 /dev/matrix
 
     # Android creates by-name disk links with the disk controller
@@ -53,9 +42,6 @@ on init
     chmod 0644 /system/framework/framework.jar
     chmod 0644 /system/framework/apache-xml.jar
     chmod 0644 /system/framework/ext.jar
-
-    #Insert silentlake vidt
-    insmod /lib/modules/vidt_driver.ko
 
     mkdir /ADF 0775 system system
     mkdir /APD 0775 system system
@@ -77,19 +63,6 @@ on boot
     chown system system /sys/class/powercap/intel-rapl/intel-rapl:0/constraint_0_power_limit_uw
     chown system system /sys/fps_throttle/notify
     chown system system /sys/fps_throttle/handshake
-
-#    insmod /lib/modules/arizona-i2c.ko
-#    insmod /lib/modules/snd-soc-arizona.ko
-#    insmod /lib/modules/snd-soc-wm-adsp.ko
-#    insmod /lib/modules/snd-soc-wm-hubs.ko
-#    insmod /lib/modules/snd-soc-florida.ko
-#    insmod /lib/modules/snd-soc-wm8994.ko
-#    insmod /lib/modules/snd-soc-sst-platform.ko dpcm_enable=1 dfw_enable=1
-#    insmod /lib/modules/snd-intel-sst.ko
-#    insmod /lib/modules/snd-moor-dpcm-florida.ko
-#    insmod /lib/modules/snd-merr-dpcm-wm8958.ko
-#    insmod /lib/modules/snd-merr-dpcm-rt5647.ko
-
 
 #   Offload specific properties
 
@@ -145,10 +118,6 @@ on boot
 
 # Reboot in COS on shutdown request when charger is plugged
     setprop ro.rebootchargermode true
-
-# Load BCM Wifi kernel module for mofd_v1 at boot time
-    insmod /lib/modules/cfg80211.ko
-    insmod /lib/modules/bcmdhd.ko
 
 #  Enable submix audio path for widi
     setprop widi.audio.module submix
@@ -217,9 +186,6 @@ on post-fs
     chmod 0664 /sys/devices/platform/gpio-keys/disabled_wakeup
     chown media system /sys/devices/platform/gpio-keys/enabled_wakeup
     chown media system /sys/devices/platform/gpio-keys/disabled_wakeup
-
-    # Insert touchscreen module
-    insmod /lib/modules/rmi4.ko
 
 #  Permissions for Sensors
     # accelerometer lsm303dlhc
@@ -370,9 +336,6 @@ service wifitest_runcmd /system/bin/wifitest_runcmd.sh
      oneshot
 
 on property:init.svc.pvrsrvctl=stopped
-    # Insert devfreq driver
-    insmod /lib/modules/dfrgx.ko
-
     # GPU freq
     chown system system /sys/class/devfreq/dfrgx/max_freq
     chmod 0660 /sys/class/devfreq/dfrgx/max_freq
@@ -428,7 +391,7 @@ on charger
     mount ext4 /dev/block/by-name/logs /logs nosuid nodev barrier=1,data=ordered
 
     start watchdogd
-    insmod /lib/modules/rmi4.ko boot_mode=1
+    #insmod /lib/modules/rmi4.ko boot_mode=1
 
     # Invoke fuel gauging helper binary to restore config data
     chmod 0770 /dev/max170xx
@@ -437,7 +400,6 @@ on charger
     wait /system/bin/fg_conf
     start fg_conf
 
-    insmod /lib/modules/atomisp-css2401a0_v21.ko
     chmod 0664 /sys/devices/pci0000:00/0000:00:10.0/hsic_enable
     write /sys/devices/pci0000:00/0000:00:10.0/hsic_enable 0
 

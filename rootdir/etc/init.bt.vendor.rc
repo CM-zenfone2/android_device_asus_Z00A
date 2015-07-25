@@ -2,9 +2,6 @@
 #  BLUETOOTH CONFIGURATION - BROADCOM SPECIFIC
 ########################################################
 
-on init
-    insmod /lib/modules/bcm_bt_lpm.ko
-
 on post-fs
     mkdir /config/bt
     chown system bluetooth /config/bt
