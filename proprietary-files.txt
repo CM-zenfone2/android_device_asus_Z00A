@@ -237,8 +237,11 @@ lib/DIT_AT_FRONT_HL.cfg
 lib/DIT_AT_FRONT_NORMAL.cfg
 lib/DIT_AT_FRONT_PRE.cfg
 lib/DIT_AT_FRONT_VIDEO.cfg
-lib/hw/camera.mofd_v1.so
-lib/hw/m10mo/camera.m10mo.so
+# Note: This is a ugly hack.  Stock has a lib/hw/camera.mofd_v1.so so if
+# we tried to copy to that name the extract scripts would actually pull
+# that file instead.  We are using camera.moorefield.so instead because
+# it works and makes the extract scripts happy.
+lib/hw/m10mo/camera.m10mo.so:lib/hw/camera.moorefield.so
 lib/libArcsoft3DNR.so
 lib/libArcsoftFaceEffect.so
 lib/libArcsoftFaceTracking.so
