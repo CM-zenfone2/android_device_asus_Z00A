@@ -30,7 +30,7 @@
              android:mtpReserve="100" />
 
     <!-- external sdcard storage -->
-    <storage android:mountPoint="/storage/MicroSD"
+    <storage android:mountPoint="/storage/sdcard1"
              android:storageDescription="@string/storage_sd_card"
              android:primary="false"
              android:removable="true"
