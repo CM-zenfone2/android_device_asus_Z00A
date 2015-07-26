@@ -354,7 +354,7 @@ service surfaceflinger /system/bin/surfaceflinger
     group graphics
     onrestart restart zygote
 
-service drm /system/bin/drmserver
+service_redefine drm /system/bin/drmserver
     class main
     user drm
     group drm system inet drmrpc sdcard_r
