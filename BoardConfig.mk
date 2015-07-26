@@ -211,7 +211,7 @@ BOARD_RIL_SUPPORTS_MULTIPLE_CLIENTS := true
 BOARD_RIL_CLASS := ../../../device/asus/Z00A/ril
 
 # Use the non-open-source parts, if they're present
--include vendor/asus/Z00A/BoardConfigVendor.mk
+include vendor/asus/Z00A/BoardConfigVendor.mk
 
 # Recipes to generate prebuilts
 -include device/intel/common/external/external.mk
