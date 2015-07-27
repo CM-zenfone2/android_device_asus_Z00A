@@ -1,0 +1,10 @@
+#============= bd_prov ==============
+type bd_prov, domain;
+type bd_prov_exec, exec_type, file_type;
+init_daemon_domain(bd_prov)
+
+allow bluetooth bd_prov_exec:file { read entrypoint };
+allow init bluetooth:process { siginh transition rlimitinh };
+
+# Access to /dev/dx_sep_q0
+allow bluetooth bt_device:chr_file { read ioctl open };

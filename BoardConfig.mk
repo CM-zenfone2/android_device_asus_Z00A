@@ -180,8 +180,8 @@ TARGET_BOOTLOADER_IS_2ND := true
 
 BOARD_SEPOLICY_DIRS := device/asus/Z00A/sepolicy
 BOARD_SEPOLICY_UNION := \
+    bd_prov.te \
     bluetooth.te \
-    btfwloader.te \
     dhcp.te \
     dumpstate.te \
     file.te \
