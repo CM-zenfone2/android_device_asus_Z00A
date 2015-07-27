@@ -19,3 +19,12 @@
 /sys/devices/virtual/thermal/thermal_zone[6-7]/emul_temp      u:object_r:sysfs_thermal_writable:s0
 /sys/module/intel_mid_osip/parameters/force_shutdown_occured    u:object_r:sysfs_thermal_writable:s0
 /sys/devices/platform/coretemp.0/temp[2-5]_threshold[1-2]    u:object_r:sysfs_coretemp:s0
+
+# sensorhubd
+/system/bin/sensorhubd          u:object_r:sensorhubd_exec:s0
+/sys/devices/platform/80860F41:04/i2c-5/5-0040/control  u:object_r:sysfs_hwmon_control:s0
+/dev/socket/sensorhubd          u:object_r:sensorhubd_socket:s0
+/dev/i2c(.*)?                   u:object_r:i2c_device:s0
+/sys/class/gpio/gpio59/value    u:object_r:sysfs_gpio_value:s0
+/sys/class/gpio/gpio95/value    u:object_r:sysfs_gpio_value:s0
+/sys/devices/pci0000:00/0000:00:16.1/control            u:object_r:sysfs_hwmon_control:s0

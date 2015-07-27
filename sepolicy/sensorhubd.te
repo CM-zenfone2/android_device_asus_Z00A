@@ -1,0 +1,21 @@
+# sensorhubd
+#/system/bin/sensorhubd          u:object_r:sensorhubd_exec:s0
+#/sys/devices/platform/80860F41:04/i2c-5/5-0040/control  u:object_r:sysfs_hwmon_control:s0
+#/dev/socket/sensorhubd          u:object_r:sensorhubd_socket:s0
+#/dev/i2c(.*)?                   u:object_r:i2c_device:s0
+#/sys/class/gpio/gpio59/value    u:object_r:sysfs_gpio_value:s0
+#/sys/class/gpio/gpio95/value    u:object_r:sysfs_gpio_value:s0
+#/sys/devices/pci0000:00/0000:00:16.1/control            u:object_r:sysfs_hwmon_control:s0
+
+#============= sensorhubd ==============
+type sensorhubd, domain;
+type sensorhubd_exec, exec_type, file_type;
+init_daemon_domain(sensorhubd)
+
+allow init sysfs_hwmon_control:file { getattr open setattr write };
+allow init sensorhubd:process { siginh transition rlimitinh };
+
+allow system_server sensorhubd_exec:file { read entrypoint };
+allow system_server sensorhubd_socket:sock_file write;
+allow system_server sensorhubd:unix_stream_socket { connectto };
+

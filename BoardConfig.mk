@@ -190,8 +190,10 @@ BOARD_SEPOLICY_UNION := \
     netd.te \
     property.te \
     pvrsrvctl.te \
+    sensorhubd.te \
     surfaceflinger.te \
     system_app.te \
+    system_server.te \
     wpa.te \
     shell.te \
     sepfs.te \

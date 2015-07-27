@@ -6,3 +6,9 @@ type bd_prov_data_file, file_type, data_file_type;
 type bt_device, dev_type;
 
 type sysfs_coretemp, fs_type, sysfs_type;
+
+# sensorhubd
+type sensorhubd_socket, file_type;
+type i2c_device, dev_type;
+type sysfs_hwmon_control, sysfs_type;
+type sysfs_gpio_value, sysfs_type;
