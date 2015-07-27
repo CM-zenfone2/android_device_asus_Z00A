@@ -185,6 +185,7 @@ BOARD_SEPOLICY_UNION := \
     dhcp.te \
     dumpstate.te \
     file.te \
+    init_shell.te \
     mediaserver.te \
     netd.te \
     property.te \
