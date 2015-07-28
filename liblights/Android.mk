@@ -24,7 +24,7 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 
 LOCAL_SHARED_LIBRARIES := liblog
 
-LOCAL_MODULE := lights.moorefield
+LOCAL_MODULE := lights.mofd_v1
 
 LOCAL_MODULE_TAGS := optional
 
