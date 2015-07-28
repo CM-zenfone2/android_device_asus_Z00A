@@ -378,6 +378,9 @@ etc/binfmt_misc/arm_exe
 bin/houdini
 lib/libhoudini.so
 
+# Lights
+lib/hw/lights.mofd_v1.so:lib/hw/lights.vendor.mofd_v1.so
+
 # Media
 lib/libdx_cc7.so
 lib/libgabi++-mfx.so

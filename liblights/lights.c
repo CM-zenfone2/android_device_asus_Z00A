@@ -26,6 +26,7 @@
 #include <pthread.h>
 #include <sys/ioctl.h>
 #include <sys/types.h>
+#include <hardware/hardware.h>
 #include <hardware/lights.h>
 
 static pthread_once_t g_init = PTHREAD_ONCE_INIT;
@@ -98,7 +99,7 @@ static int set_light_noop(struct light_device_t *dev,
     return 0;
 }
 
-static int open_lights(const struct hw_module_t *module, char const *name,
+static int open_oss_lights(const struct hw_module_t *module, char const *name,
                         struct hw_device_t **device)
 {
     int (*set_light)(struct light_device_t *dev,
@@ -107,12 +108,6 @@ static int open_lights(const struct hw_module_t *module, char const *name,
     if (0 == strcmp(LIGHT_ID_BACKLIGHT, name))
         set_light = set_light_backlight;
     else if (0 == strcmp(LIGHT_ID_BUTTONS, name))
-        set_light = set_light_noop;
-    else if (0 == strcmp(LIGHT_ID_BATTERY, name))
-        set_light = set_light_noop;
-    else if (0 == strcmp(LIGHT_ID_NOTIFICATIONS, name))
-        set_light = set_light_noop;
-    else if (0 == strcmp(LIGHT_ID_ATTENTION, name))
         set_light = set_light_noop;
     else
         return -EINVAL;
@@ -131,6 +126,36 @@ static int open_lights(const struct hw_module_t *module, char const *name,
     *device = (struct hw_device_t *)dev;
 
     return 0;
+}
+
+static int open_vendor_lights(char const *name,
+                        struct hw_device_t **device)
+{
+    static hw_module_t *vendor_module;
+
+    if (! vendor_module) {
+        ALOGI("Loading vendor lib");
+        int rv = hw_get_module_by_class("lights", "vendor", (const hw_module_t **) &vendor_module);
+        if (rv) {
+            ALOGE("Failed to load vendor lib rv=%d\n", rv);
+            return rv;
+        }
+        ALOGI("Loaded '%s'\n", vendor_module->name);
+    }
+
+    return vendor_module->methods->open(vendor_module, name, device);
+}
+
+static int open_lights(const struct hw_module_t *module, char const *name,
+                        struct hw_device_t **device)
+{
+    int rv;
+
+    rv = open_oss_lights(module, name, device);
+    if (rv == -EINVAL)
+        rv = open_vendor_lights(name, device);
+
+    return rv;
 }
 
 static struct hw_module_methods_t lights_module_methods = {
