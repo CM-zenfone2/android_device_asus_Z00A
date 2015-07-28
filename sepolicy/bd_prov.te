@@ -10,6 +10,6 @@ allow init bluetooth:process { siginh transition rlimitinh };
 allow bluetooth bt_device:chr_file { read ioctl open };
 
 # Access to /config/bt/*
-allow bluetooth bd_prov_data_file:dir { write search getattr add_name };
+allow bluetooth config_file:dir { write search getattr add_name };
 # Access to /config/bt/bd_addr.conf
-allow bluetooth bd_prov_data_file:file { write read create open setattr getattr};
+allow bluetooth config_file:file { write read create open setattr getattr};

@@ -1,2 +1,5 @@
 # TODO: investigate cause of this
 allow mediaserver graphics_device:dir search;
+allow mediaserver tty_device:chr_file { getattr ioctl open read write };
+binder_use(mediaserver)
+wakelock_use(mediaserver)
