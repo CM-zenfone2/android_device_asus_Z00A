@@ -1,21 +1,85 @@
-# sensorhubd
-#/system/bin/sensorhubd          u:object_r:sensorhubd_exec:s0
-#/sys/devices/platform/80860F41:04/i2c-5/5-0040/control  u:object_r:sysfs_hwmon_control:s0
-#/dev/socket/sensorhubd          u:object_r:sensorhubd_socket:s0
-#/dev/i2c(.*)?                   u:object_r:i2c_device:s0
-#/sys/class/gpio/gpio59/value    u:object_r:sysfs_gpio_value:s0
-#/sys/class/gpio/gpio95/value    u:object_r:sysfs_gpio_value:s0
-#/sys/devices/pci0000:00/0000:00:16.1/control            u:object_r:sysfs_hwmon_control:s0
-
 #============= sensorhubd ==============
 type sensorhubd, domain;
 type sensorhubd_exec, exec_type, file_type;
 init_daemon_domain(sensorhubd)
 
-allow init sysfs_hwmon_control:file { getattr open setattr write };
 allow init sensorhubd:process { siginh transition rlimitinh };
-
+allow init sysfs_hwmon_control:file { getattr open setattr write };
+allow sensorhubd debuggerd:dir search;
+allow sensorhubd debuggerd:file { read open };
+allow sensorhubd debuggerd:lnk_file read;
+allow sensorhubd drmserver:dir search;
+allow sensorhubd drmserver:file { read open };
+allow sensorhubd drmserver:lnk_file read;
+allow sensorhubd efs_file:file { read write getattr open };
+allow sensorhubd gpsd:dir search;
+allow sensorhubd gpsd:file { read open };
+allow sensorhubd gpsd:lnk_file read;
+allow sensorhubd healthd:dir search;
+allow sensorhubd healthd:file { read open };
+allow sensorhubd healthd:lnk_file read;
+allow sensorhubd init:dir search;
+allow sensorhubd init:file { read open };
+allow sensorhubd init:lnk_file read;
+allow sensorhubd init_shell:dir search;
+allow sensorhubd init_shell:file { read open };
+allow sensorhubd init_shell:lnk_file read;
+allow sensorhubd installd:dir search;
+allow sensorhubd installd:file { read open };
+allow sensorhubd installd:lnk_file read;
+allow sensorhubd kernel:dir search;
+allow sensorhubd kernel:file { read open };
+allow sensorhubd kernel:lnk_file read;
+allow sensorhubd keystore:dir search;
+allow sensorhubd keystore:file { read open };
+allow sensorhubd keystore:lnk_file read;
+allow sensorhubd lmkd:dir search;
+allow sensorhubd lmkd:file open;
+allow sensorhubd lmkd:file read;
+allow sensorhubd lmkd:lnk_file read;
+allow sensorhubd logd:dir search;
+allow sensorhubd logd:file { read open };
+allow sensorhubd logd:lnk_file read;
+allow sensorhubd mediaserver:dir search;
+allow sensorhubd mediaserver:file { read open };
+allow sensorhubd mediaserver:lnk_file read;
+allow sensorhubd netd:dir search;
+allow sensorhubd netd:file { read open };
+allow sensorhubd netd:lnk_file read;
+allow sensorhubd pvrsrvctl:dir search;
+allow sensorhubd pvrsrvctl:file { read open };
+allow sensorhubd pvrsrvctl:lnk_file read;
+allow sensorhubd rild:dir search;
+allow sensorhubd rild:file { read open };
+allow sensorhubd rild:lnk_file read;
+allow sensorhubd sdcardd:dir search;
+allow sensorhubd sdcardd:file { read open };
+allow sensorhubd sdcardd:lnk_file read;
+allow sensorhubd servicemanager:dir search;
+allow sensorhubd servicemanager:file { read open };
+allow sensorhubd servicemanager:lnk_file read;
+allow sensorhubd shell:dir search;
+allow sensorhubd shell_exec:file { read execute open execute_no_trans };
+allow sensorhubd shell:file { read open };
+allow sensorhubd shell:lnk_file read;
+allow sensorhubd surfaceflinger:dir search;
+allow sensorhubd surfaceflinger:file { read open };
+allow sensorhubd surfaceflinger:lnk_file read;
+allow sensorhubd sysfs_hwmon_control:file { write open };
+allow sensorhubd system_data_file:file { write open append };
+allow sensorhubd system_file:file execute_no_trans;
+allow sensorhubd ueventd:dir search;
+allow sensorhubd ueventd:file { read open };
+allow sensorhubd ueventd:lnk_file read;
+allow sensorhubd vold:dir search;
+allow sensorhubd vold:file { read open };
+allow sensorhubd vold:lnk_file read;
+allow sensorhubd watchdogd:dir search;
+allow sensorhubd watchdogd:file { read open };
+allow sensorhubd watchdogd:lnk_file read;
+allow sensorhubd zygote:dir search;
+allow sensorhubd zygote:file { read open };
+allow sensorhubd zygote:lnk_file read;
 allow system_server sensorhubd_exec:file { read entrypoint };
 allow system_server sensorhubd_socket:sock_file write;
 allow system_server sensorhubd:unix_stream_socket { connectto };
-
