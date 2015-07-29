@@ -70,6 +70,11 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger \
+    charger_res_images
+
 # GPS
 PRODUCT_COPY_FILES += \
     device/asus/Z00A/configs/gps.conf:system/etc/gps.conf \
