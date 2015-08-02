@@ -75,10 +75,6 @@ PRODUCT_PACKAGES += \
     charger \
     charger_res_images
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.mofd_v1 \
-
 # GPS
 PRODUCT_COPY_FILES += \
     device/asus/Z00A/configs/gps.conf:system/etc/gps.conf \
