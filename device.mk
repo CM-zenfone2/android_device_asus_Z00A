@@ -124,10 +124,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.hfp.WideBandSpeechEnabled=true
 
-# IMG graphics
-PRODUCT_PACKAGES += \
-    hwcomposer.moorefield
-
 #Video
 PRODUCT_COPY_FILES += \
     device/asus/Z00A/media/media_profiles.xml:system/etc/media_profiles.xml \
@@ -193,9 +189,7 @@ PRODUCT_PACKAGES += \
 
 # libdrm
 PRODUCT_PACKAGES += \
-    libdrm \
-    dristat \
-    drmstat
+    libdrm
 
 # Wifi
 PRODUCT_PACKAGES += \

@@ -375,6 +375,12 @@ etc/binfmt_misc/arm_exe
 bin/houdini
 lib/libhoudini.so
 
+# HWComposer
+lib/hw/hwcomposer.moorefield.so
+lib/libhwcwidi.so
+lib/libmultidisplay.so
+lib/libvpp_setting.so
+
 # Lights
 lib/hw/lights.mofd_v1.so:lib/hw/lights.vendor.mofd_v1.so
 
