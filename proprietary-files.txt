@@ -31,7 +31,7 @@ vendor/firmware/bcm2079x-a2_firmware.ncd
 # Radio
 lib/librapid-ril-core.so
 vendor/firmware/telephony/hash
-vendor/firmware/telephony/XMM_7260_SINGLE_REV20_1520.00_V4.0_ASUS7262_HSIC_FLASHLESS.fls
+vendor/firmware/telephony/XMM_7260_REV20_1524.00_V4.0_ASUS7262_HSIC_FLASHLESS.fls
 
 # Sensors
 etc/firmware/psh.bin
