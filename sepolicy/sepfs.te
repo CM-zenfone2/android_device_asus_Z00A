@@ -1,2 +1,0 @@
-type sepfs, fs_type;
-allow file_type sepfs:filesystem associate;

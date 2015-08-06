@@ -1,4 +1,0 @@
-#============= init ==============
-allow init port:tcp_socket name_connect;
-allow init self:tcp_socket { write getopt create read connect };
-

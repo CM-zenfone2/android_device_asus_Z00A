@@ -1,8 +1,0 @@
-allow wpa efs_file:dir r_dir_perms;
-allow wpa efs_file:file rw_file_perms;
-
-# Access to /config/wifi/*
-allow wpa config_file:dir { write search getattr add_name };
-
-# Access to /config/wifi/country_code
-allow wpa config_file:file { open read };

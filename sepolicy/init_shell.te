@@ -1,6 +1,0 @@
-#============= init_shell ==============
-allow init_shell ctl_default_prop:property_service set;
-allow init_shell ctl_rildaemon_prop:property_service set;
-allow init_shell default_prop:property_service set;
-allow init_shell radio_prop:property_service set;
-allow init_shell zygote_exec:file execute_no_trans;

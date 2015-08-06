@@ -1,5 +1,0 @@
-#============= system_server ==============
-allow system_server efs_file:dir { read open };
-allow system_server efs_file:file { read open };
-allow system_server gps_data_file:fifo_file { write read open };
-allow system_server init:binder transfer;

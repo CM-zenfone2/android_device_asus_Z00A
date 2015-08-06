@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/full_Z00A.mk
+     $(LOCAL_DIR)/device.mk
