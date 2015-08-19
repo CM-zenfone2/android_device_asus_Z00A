@@ -8,18 +8,9 @@ etc/catalog/V1_DSDA/audiocomms_config/parameter-framework/Settings/Route/RouteCo
 etc/firmware/BCM4335C0_003.001.009.0105.0563_Asus_ZE551ML.hcd
 
 # Camera
-etc/atomisp/00t4k37.aiqb
-etc/DataSet/ispDB/ParameterDB.db
-etc/DataSet/ispDB/ParameterDB.db
-lib/DataSet/ditSCidGen/msgchk.db
-lib/DIT_AT_BACK_HL.cfg
-lib/DIT_AT_BACK_NORMAL.cfg
-lib/DIT_AT_BACK_SR.cfg
+lib/libxditk_DIT_Moorefield.so
 lib/hw/camera.mofd_v1.so
 lib/hw/m10mo/camera.m10mo.so
-lib/libxditk_AT.so
-lib/libxditk_DIT_Moorefield.so
-lib/libxditk_ISP.so
 
 # Firmware
 etc/firmware/FW_INFO.bin
@@ -27,11 +18,6 @@ etc/firmware/M10MO_fw.bin
 
 # NFC
 vendor/firmware/bcm2079x-a2_firmware.ncd
-
-# Radio
-lib/librapid-ril-core.so
-vendor/firmware/telephony/hash
-vendor/firmware/telephony/XMM_7260_REV20_1524.00_V4.0_ASUS7262_HSIC_FLASHLESS.fls
 
 # Sensors
 etc/firmware/psh.bin
