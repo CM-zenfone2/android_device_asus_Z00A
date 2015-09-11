@@ -73,4 +73,10 @@
         <value>563</value>
     </array>
     <item name="battery.capacity">3000</item>
+    <array name="camera.mode">
+        <value>60</value>
+        <value>60</value>
+        <value>310</value>
+        <value>190</value>
+    </array>
 </device>
