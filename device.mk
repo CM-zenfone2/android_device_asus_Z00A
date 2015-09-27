@@ -44,6 +44,12 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
+# Ramdisk config of governors
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.sys.perf.device.powersave=1500000 \
+    ro.sys.perf.device.full=2333000 \
+    ro.sys.perf.device.touchboost=1833000
+
 $(call inherit-product-if-exists, vendor/asus/Z00A/Z00A-vendor.mk)
 
 # Inherit from mofd-common
