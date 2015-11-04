@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_device_asus_mofd-common",
+    "target_path": "device/asus/mofd-common"
+  }
+]
