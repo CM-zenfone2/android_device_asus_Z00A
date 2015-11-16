@@ -9,7 +9,7 @@ etc/firmware/BCM4335C0_003.001.009.0105.0563_Asus_ZE551ML.hcd
 
 # Camera
 lib/libxditk_DIT_Moorefield.so
-lib/hw/camera.mofd_v1.so
+lib/hw/camera.mofd_v1.so:lib/hw/camera.vendor.mofd_v1.so
 lib/hw/m10mo/camera.m10mo.so
 
 # Firmware
